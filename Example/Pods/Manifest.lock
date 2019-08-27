@@ -1,0 +1,16 @@
+PODS:
+  - mCardsContainer (0.1.0)
+
+DEPENDENCIES:
+  - mCardsContainer (from `../`)
+
+EXTERNAL SOURCES:
+  mCardsContainer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  mCardsContainer: 439416cdf3a32e556a458f226af11399a63b8e2c
+
+PODFILE CHECKSUM: 80f7766bf2148e471f252dc68179eb0aa9ecb610
+
+COCOAPODS: 1.6.1

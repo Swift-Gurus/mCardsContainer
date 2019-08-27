@@ -1,0 +1,23 @@
+{
+  "name": "mCardsContainer",
+  "version": "0.1.0",
+  "summary": "A short description of mCardsContainer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/aldo-dev/mCardsContainer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ALDO INC": "aldodev@aldogroup.com"
+  },
+  "source": {
+    "git": "https://github.com/aldo-dev/mCardsContainer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "swift_version": "5.0",
+  "source_files": "mCardsContainer/Classes/**/*"
+}

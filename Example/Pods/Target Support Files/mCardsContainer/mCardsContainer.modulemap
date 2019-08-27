@@ -1,0 +1,6 @@
+framework module mCardsContainer {
+  umbrella header "mCardsContainer-umbrella.h"
+
+  export *
+  module * { export * }
+}

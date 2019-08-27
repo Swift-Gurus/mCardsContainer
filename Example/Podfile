@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'mCardsContainer_Example' do
+  pod 'mCardsContainer', :path => '../'
+
+  target 'mCardsContainer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
