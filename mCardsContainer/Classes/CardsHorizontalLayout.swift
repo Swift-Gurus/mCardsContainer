@@ -161,6 +161,7 @@ public class CardsHorizontalLayout: BasicCollectionViewLayout {
     
 
     private func currentAttributes(for velocity: CGPoint) -> CardsLayoutAttributes {
+        guard velocity.x != 0 else { return cachedAttributes[currentItemIndex] }
         velocity.x > 0 ? increaseCurrentIndex() : decreaseCurrentIndex()
         return cachedAttributes[currentItemIndex]
     }
