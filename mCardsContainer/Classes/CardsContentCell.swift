@@ -10,7 +10,7 @@ import UIKit
 
 class CardsContentCell: UICollectionViewCell {
     let label = UILabel(frame: .zero)
-    
+    private let tagValue = 99999
     override init(frame: CGRect) {
         super.init(frame: frame)
 
@@ -21,7 +21,7 @@ class CardsContentCell: UICollectionViewCell {
     
     
     func addContentView(view: UIView) {
-        view.tag = 9999
+        view.tag = tagValue
         view.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(view)
         view.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
@@ -33,7 +33,7 @@ class CardsContentCell: UICollectionViewCell {
     
     
     override func prepareForReuse() {
-        viewWithTag(9999)?.removeFromSuperview()
+        viewWithTag(tagValue)?.removeFromSuperview()
     }
     
     override func layoutSubviews() {
