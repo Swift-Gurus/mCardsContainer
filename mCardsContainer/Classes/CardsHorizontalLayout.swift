@@ -14,13 +14,16 @@ public struct LayoutConfig {
     let hightProportion: Double
     let widthProportion: Double
     let scrollingEnabled: Bool
+    let isPagingEnabled: Bool
     
     public init(hightProportion: Double = 0.7,
                 widthProportion: Double = 0.8,
-                scrollingEnabled: Bool = true) {
+                scrollingEnabled: Bool = true,
+                isPagingEnabled: Bool = false) {
         self.hightProportion = hightProportion
         self.widthProportion = widthProportion
         self.scrollingEnabled = scrollingEnabled
+        self.isPagingEnabled = isPagingEnabled
     }
 }
     
@@ -92,6 +95,9 @@ public class CardsHorizontalLayout: BasicCollectionViewLayout {
     override public func prepare() {
         
         _collectionView.isScrollEnabled = config.scrollingEnabled
+        
+        // Enable paging UI while scrolling set decelerationRate .fast
+        _collectionView.decelerationRate = config.isPagingEnabled ? .fast : .normal
         cachedAttributes = stride(from: 0, to: _collectionView.numberOfSections, by: 1).map(getAttributesFor)
                                                                                        .flatMap({ $0 })
     }
