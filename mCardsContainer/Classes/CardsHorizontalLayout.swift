@@ -9,53 +9,12 @@
 import Foundation
 import UIKit
 
-
-public struct LayoutConfig {
-    let hightProportion: Double
-    let widthProportion: Double
-    let scrollingEnabled: Bool
-    let isPagingEnabled: Bool
-    
-    public init(hightProportion: Double = 0.7,
-                widthProportion: Double = 0.8,
-                scrollingEnabled: Bool = true,
-                isPagingEnabled: Bool = false) {
-        self.hightProportion = hightProportion
-        self.widthProportion = widthProportion
-        self.scrollingEnabled = scrollingEnabled
-        self.isPagingEnabled = isPagingEnabled
-    }
-}
-    
-
-class CardsLayoutAttributes: UICollectionViewLayoutAttributes {
-    var cornerRadius: CGFloat = 0
-    override init() {
-        super.init()
-    }
-
-    
-    override func copy(with zone: NSZone? = nil) -> Any {
-        let copyAttr = super.copy(with: zone) as? CardsLayoutAttributes ?? CardsLayoutAttributes()
-        copyAttr.cornerRadius = self.cornerRadius
-        return copyAttr
-    }
-    
-}
-    
-public class BasicCollectionViewLayout: UICollectionViewLayout {
-    var _collectionView: UICollectionView {
-        guard let cv = collectionView else { fatalError() }
-        return cv
-    }
-}
-
 public class CardsHorizontalLayout: BasicCollectionViewLayout {
     
     private let config: LayoutConfig
     
     
-    private var currentItemIndex = 0
+    private var currentItemIndex = 1
     
     private var widthProportion: CGFloat {
         return CGFloat(config.widthProportion)
@@ -66,16 +25,22 @@ public class CardsHorizontalLayout: BasicCollectionViewLayout {
     }
 
     
-    private var itemHight: CGFloat {
+    var itemHight: CGFloat {
         return _collectionView.bounds.height * hightProportion
     }
     
-    private var itemWidth: CGFloat {
+    var itemWidth: CGFloat {
         return _collectionView.bounds.width * widthProportion
     }
     
-    private var basicOffset: CGFloat {
+     var basicOffset: CGFloat {
         return  (_collectionView.bounds.width - itemWidth) / 2
+    }
+    
+    private var stopPoint: CGPoint {
+        guard let attributes = cachedAttributes.first else { return .zero }
+        
+        return CGPoint(x: attributes.frame.origin.x + attributes.frame.size.width, y: 0)
     }
     
     public init(config: LayoutConfig) {
@@ -88,23 +53,21 @@ public class CardsHorizontalLayout: BasicCollectionViewLayout {
     }
     
     var cachedAttributes: [CardsLayoutAttributes] = []
-    override public func prepareForTransition(from oldLayout: UICollectionViewLayout) {
-        super.prepareForTransition(from: oldLayout)
-        collectionView?.isScrollEnabled = true
-    }
+    
     override public func prepare() {
-        
         _collectionView.isScrollEnabled = config.scrollingEnabled
         
         // Enable paging UI while scrolling set decelerationRate .fast
         _collectionView.decelerationRate = config.isPagingEnabled ? .fast : .normal
         cachedAttributes = stride(from: 0, to: _collectionView.numberOfSections, by: 1).map(getAttributesFor)
                                                                                        .flatMap({ $0 })
+    
     }
     
     override public var collectionViewContentSize: CGSize {
       let lastFrame = cachedAttributes.last?.frame ?? .zero
       let width = lastFrame.origin.x + lastFrame.width
+       
       return CGSize(width: width + basicOffset, height: lastFrame.width)
     }
 
@@ -112,7 +75,7 @@ public class CardsHorizontalLayout: BasicCollectionViewLayout {
         return cachedAttributes.filter({ $0.frame.intersects(rect) })
     }
     
-    
+
     override public func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
         return cachedAttributes[indexPath.row]
     }
@@ -153,7 +116,8 @@ public class CardsHorizontalLayout: BasicCollectionViewLayout {
     }
     
     
-    override public func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
+    override public func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint,
+                                             withScrollingVelocity velocity: CGPoint) -> CGPoint {
        let frame = currentAttributes(for: velocity).frame
        let newSuggestedOffset = CGPoint(x: frame.origin.x - basicOffset,
                                         y: proposedContentOffset.y)

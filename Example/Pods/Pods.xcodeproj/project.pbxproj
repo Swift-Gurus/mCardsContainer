@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E1A767AC455EA757C6DF3F83AF4DEFB /* DefaultAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBA4A48B13632A5DB382595AFCDF9BB /* DefaultAnimator.swift */; };
+		02BA9F8D9997CEB0BCB2A6768898090A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		1ACF739E2CBF814DC9E9199147A421A7 /* Pods-mCardsContainer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDF61D4378F774ADC41B795688C35852 /* Pods-mCardsContainer_Example-dummy.m */; };
+		30A6347F138EDAB6958F6E76CBE04391 /* CardsLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7B525C2009CF786E199F98138651F9 /* CardsLayoutAttributes.swift */; };
+		419DB937A0290EE43FA1E3D358228AA5 /* mCardsContainer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4D0283C25F2C74312152C38FF2B6A8 /* mCardsContainer-dummy.m */; };
 		4AE2F82170FF9206B0262733BDF801DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		4F77D1A9B4BA7FDC1A19CF9C28C3BD7D /* Pods-mCardsContainer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAA439748BBCBF21C697203154BFEEE /* Pods-mCardsContainer_Tests-dummy.m */; };
-		52065F235E3D4E963D125AFC3D020BED /* CardsHorizontalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B01ED61D64B011030ADCEACC139EC92 /* CardsHorizontalLayout.swift */; };
-		5B3B30310868DD1A240311FCEE38E74C /* mCardsContainer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF2D867E82610AB6BC4FD83A15CBD4B /* mCardsContainer-dummy.m */; };
+		61CCF9BEE4E41A6B5D2EF689FA88FDA4 /* CardsMenuLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E360FB583AB7C724A65DFCDAA5F26A96 /* CardsMenuLayout.swift */; };
 		6D4C528D001D4BBE69AED9F3B9488AAA /* Pods-mCardsContainer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E489DC906776C9D5274896CB81E51B /* Pods-mCardsContainer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7A7155946638120105C56737168E1E6F /* mCardsContainer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 23EAC71492159E46597E69569F63E8C3 /* mCardsContainer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72F7BF4F811B1F392723799CA1EB8DF7 /* CardsContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6904574FB244A2FCCAC12A548F77B8 /* CardsContentCell.swift */; };
+		933F400471AA9DD928BFD5FF0FFCA04B /* BasicCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564A6314C25BD6F424D24B634D17A356 /* BasicCollectionViewLayout.swift */; };
 		958F16D4FC159EA8DBD41F7A1767CF52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		9E6AD048633964CD47089CF17FA482A6 /* CardsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B286E9FEEDF3FC0C4F883381DC797E /* CardsContainer.swift */; };
-		A0076DD4D9EBCD643C3880D7F55E1BAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		98091F18990557CB66953E583514503A /* LayoutConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EABF4CFDDC6732441741EAB834A7A /* LayoutConfig.swift */; };
+		9DD374810E7BAC3713E6B18C34F139CF /* CardsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A582704681DA97FCD5B12CAA69C0B5F /* CardsContainer.swift */; };
 		A77F52B89633731A16A4265DDD88A084 /* Pods-mCardsContainer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC0112066D7C7BE0B03AF70571D90AA8 /* Pods-mCardsContainer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C358041790E4A4F1692E867959928BF0 /* CardsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AAE7E4A214648055A07E5FE35A6AE6 /* CardsCollectionViewController.swift */; };
-		E5E944EF7CEB6D6EE235EC0F7524FC58 /* CardsContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094BF4EF897558CA6F26BE240BDB594B /* CardsContainerBuilder.swift */; };
-		EE8ADDF8756CBE4E4A49E8F7D626974C /* CardsContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FFCAE2326AA51EF40527C0972C0783 /* CardsContentCell.swift */; };
+		BC6FA80127CB580F070E0F6188836064 /* mCardsContainer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F5B80D224175026DDDE018E024EEB9 /* mCardsContainer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF05B4C92D64CC06F2EC88C92F926EAA /* DefaultAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C003F673A5BDF9AD3BD468D170C53212 /* DefaultAnimator.swift */; };
+		DA8DCD7F318BB79FA1CBB2299EDDC1DA /* CardsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED335AB794DCD210A01160B768F35E5 /* CardsCollectionViewController.swift */; };
+		ECBB0EA0501967667C8EA7393E1EECD1 /* CardsHorizontalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F33478D6FDB9FDF47B982873E47293C /* CardsHorizontalLayout.swift */; };
+		EE6DA90FB5EC6A216D71C2D6C32948F2 /* CardsContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E8B8DEC7E09810BF21019A83B61611 /* CardsContainerBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +33,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 13837FE15ED5A9B719849A20F754C328;
+			remoteGlobalIDString = 7AAC0044C16596B098EEB3B80FF6E10C;
 			remoteInfo = mCardsContainer;
 		};
 		DC8DA1D51E55D7A768FF3DF7B3763ACD /* PBXContainerItemProxy */ = {
@@ -42,42 +46,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		094BF4EF897558CA6F26BE240BDB594B /* CardsContainerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsContainerBuilder.swift; path = mCardsContainer/Classes/CardsContainerBuilder.swift; sourceTree = "<group>"; };
+		0A1EABF4CFDDC6732441741EAB834A7A /* LayoutConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConfig.swift; path = mCardsContainer/Classes/LayoutConfig.swift; sourceTree = "<group>"; };
 		116B7C1BF50131AD5C1CDA49BC21A307 /* Pods-mCardsContainer_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mCardsContainer_Example-Info.plist"; sourceTree = "<group>"; };
-		19445FF24BD1E11707ECB480F62FE76A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1ECC940AC0392B685248E0B745ED327C /* mCardsContainer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = mCardsContainer.modulemap; sourceTree = "<group>"; };
 		20F1413BA7EAC4812364D8269853F8EA /* Pods-mCardsContainer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mCardsContainer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		23EAC71492159E46597E69569F63E8C3 /* mCardsContainer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "mCardsContainer-umbrella.h"; sourceTree = "<group>"; };
 		241928AD3E69116E7AD29C97ED6CA460 /* Pods-mCardsContainer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-mCardsContainer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2FF2D867E82610AB6BC4FD83A15CBD4B /* mCardsContainer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "mCardsContainer-dummy.m"; sourceTree = "<group>"; };
-		33A1595F6D326F89423B3F6160AFC756 /* mCardsContainer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = mCardsContainer.xcconfig; sourceTree = "<group>"; };
+		2A582704681DA97FCD5B12CAA69C0B5F /* CardsContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsContainer.swift; path = mCardsContainer/Classes/CardsContainer.swift; sourceTree = "<group>"; };
+		2D7B525C2009CF786E199F98138651F9 /* CardsLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsLayoutAttributes.swift; path = mCardsContainer/Classes/CardsLayoutAttributes.swift; sourceTree = "<group>"; };
+		2E8E889D3F240D253B947AEF26AD642D /* mCardsContainer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "mCardsContainer-Info.plist"; sourceTree = "<group>"; };
 		44CF6F44543334E80268DE9B776D99EB /* Pods_mCardsContainer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_mCardsContainer_Tests.framework; path = "Pods-mCardsContainer_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47E8B8DEC7E09810BF21019A83B61611 /* CardsContainerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsContainerBuilder.swift; path = mCardsContainer/Classes/CardsContainerBuilder.swift; sourceTree = "<group>"; };
 		4A81D63F2FD2300EF22522DF53D5920C /* Pods_mCardsContainer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_mCardsContainer_Example.framework; path = "Pods-mCardsContainer_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51875AD78340544954A6C5A8BD834E9A /* Pods-mCardsContainer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-mCardsContainer_Example.modulemap"; sourceTree = "<group>"; };
+		564A6314C25BD6F424D24B634D17A356 /* BasicCollectionViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicCollectionViewLayout.swift; path = mCardsContainer/Classes/BasicCollectionViewLayout.swift; sourceTree = "<group>"; };
 		57F18F2B17AD2E3950646DBE3AC6E319 /* Pods-mCardsContainer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mCardsContainer_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5B01ED61D64B011030ADCEACC139EC92 /* CardsHorizontalLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsHorizontalLayout.swift; path = mCardsContainer/Classes/CardsHorizontalLayout.swift; sourceTree = "<group>"; };
 		60A96DE96D1FE80229909C44985C65A1 /* Pods-mCardsContainer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mCardsContainer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		69E489DC906776C9D5274896CB81E51B /* Pods-mCardsContainer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-mCardsContainer_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6F4D0283C25F2C74312152C38FF2B6A8 /* mCardsContainer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "mCardsContainer-dummy.m"; sourceTree = "<group>"; };
 		71632821C7783F3FDAD75BD60432DC11 /* mCardsContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = mCardsContainer.framework; path = mCardsContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		726FE1B13603A4B46DD4C50ACE6A19CB /* mCardsContainer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "mCardsContainer-Info.plist"; sourceTree = "<group>"; };
-		784C18B60A6A2260911EA631ACC771C9 /* mCardsContainer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = mCardsContainer.modulemap; sourceTree = "<group>"; };
+		7780B906C0AF22D31FDE3F3452CB1BF3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		83F5B80D224175026DDDE018E024EEB9 /* mCardsContainer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "mCardsContainer-umbrella.h"; sourceTree = "<group>"; };
 		8BE9C89063F9B8740F5976262A3FA4A4 /* Pods-mCardsContainer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-mCardsContainer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8FDEC8B9542DF4200AC981439C828F40 /* mCardsContainer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = mCardsContainer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95FFCAE2326AA51EF40527C0972C0783 /* CardsContentCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsContentCell.swift; path = mCardsContainer/Classes/CardsContentCell.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F33478D6FDB9FDF47B982873E47293C /* CardsHorizontalLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsHorizontalLayout.swift; path = mCardsContainer/Classes/CardsHorizontalLayout.swift; sourceTree = "<group>"; };
+		A005E2C6EBC067188A8AD8A5C82E6E94 /* mCardsContainer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "mCardsContainer-prefix.pch"; sourceTree = "<group>"; };
 		AB226C44CA3343FE257443A8343EEFA9 /* Pods-mCardsContainer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mCardsContainer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC0112066D7C7BE0B03AF70571D90AA8 /* Pods-mCardsContainer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-mCardsContainer_Example-umbrella.h"; sourceTree = "<group>"; };
 		B1E716AAB25B4558FAA2D0F4BCAE1EDF /* Pods-mCardsContainer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mCardsContainer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		BCBA4A48B13632A5DB382595AFCDF9BB /* DefaultAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultAnimator.swift; path = mCardsContainer/Classes/DefaultAnimator.swift; sourceTree = "<group>"; };
+		BA6904574FB244A2FCCAC12A548F77B8 /* CardsContentCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsContentCell.swift; path = mCardsContainer/Classes/CardsContentCell.swift; sourceTree = "<group>"; };
 		BDF61D4378F774ADC41B795688C35852 /* Pods-mCardsContainer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-mCardsContainer_Example-dummy.m"; sourceTree = "<group>"; };
 		BEAA439748BBCBF21C697203154BFEEE /* Pods-mCardsContainer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-mCardsContainer_Tests-dummy.m"; sourceTree = "<group>"; };
-		C4B286E9FEEDF3FC0C4F883381DC797E /* CardsContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsContainer.swift; path = mCardsContainer/Classes/CardsContainer.swift; sourceTree = "<group>"; };
+		C003F673A5BDF9AD3BD468D170C53212 /* DefaultAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultAnimator.swift; path = mCardsContainer/Classes/DefaultAnimator.swift; sourceTree = "<group>"; };
 		C51804125E451F5C27772F2D99CE1778 /* Pods-mCardsContainer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-mCardsContainer_Tests.modulemap"; sourceTree = "<group>"; };
-		C9AAE7E4A214648055A07E5FE35A6AE6 /* CardsCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsCollectionViewController.swift; path = mCardsContainer/Classes/CardsCollectionViewController.swift; sourceTree = "<group>"; };
 		CA646FC0C2561CC351A2975B1F58D695 /* Pods-mCardsContainer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mCardsContainer_Example-frameworks.sh"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CEB13BD5312F5627E7A8B06D1444AB3D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		D911770717165AD82655457506E1163B /* Pods-mCardsContainer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mCardsContainer_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DE1A67A021099ECFEA1405EF4C5208F7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		FC184E557BBCDE1538E73F66B976756E /* mCardsContainer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "mCardsContainer-prefix.pch"; sourceTree = "<group>"; };
+		DED335AB794DCD210A01160B768F35E5 /* CardsCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsCollectionViewController.swift; path = mCardsContainer/Classes/CardsCollectionViewController.swift; sourceTree = "<group>"; };
+		E25D1F0AF81B5CD83D2E51B20152F322 /* mCardsContainer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = mCardsContainer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E360FB583AB7C724A65DFCDAA5F26A96 /* CardsMenuLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsMenuLayout.swift; path = mCardsContainer/Classes/CardsMenuLayout.swift; sourceTree = "<group>"; };
+		FB54DDE9A79C034CDAE5DCF77A0A77A1 /* mCardsContainer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = mCardsContainer.xcconfig; sourceTree = "<group>"; };
 		FF6D98842FCBA31D81A9C4890D041C34 /* Pods-mCardsContainer_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mCardsContainer_Tests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,11 +106,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89EB4539BC88F3D56A574C0115095774 /* Frameworks */ = {
+		89C1BBAC7DC54E9862DAB03A9F24D908 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0076DD4D9EBCD643C3880D7F55E1BAE /* Foundation.framework in Frameworks */,
+				02BA9F8D9997CEB0BCB2A6768898090A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +125,24 @@
 				44CF6F44543334E80268DE9B776D99EB /* Pods_mCardsContainer_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		07E3FCB2600048EBF2794EDFA009747F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFCF2F837195D1B5DDE12EDB6D19E0E2 /* mCardsContainer */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6EF440C25A94AB7C6FAD58338F45FF77 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7780B906C0AF22D31FDE3F3452CB1BF3 /* LICENSE */,
+				E25D1F0AF81B5CD83D2E51B20152F322 /* mCardsContainer.podspec */,
+				CEB13BD5312F5627E7A8B06D1444AB3D /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		9A3444F623884F9CE7B00B9E07A47A3D /* Targets Support Files */ = {
@@ -152,33 +178,45 @@
 			path = "Target Support Files/Pods-mCardsContainer_Tests";
 			sourceTree = "<group>";
 		};
-		B428916056C6D6F9693B67D587FC4F0F /* Development Pods */ = {
+		BBE309975B6E75AF85AA944FC79F77AE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E7A8DD2CAE2C63ACA7D2C3D87F2DCB69 /* mCardsContainer */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		C5E13ABD5E9C82827077DB65D001628E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				784C18B60A6A2260911EA631ACC771C9 /* mCardsContainer.modulemap */,
-				33A1595F6D326F89423B3F6160AFC756 /* mCardsContainer.xcconfig */,
-				2FF2D867E82610AB6BC4FD83A15CBD4B /* mCardsContainer-dummy.m */,
-				726FE1B13603A4B46DD4C50ACE6A19CB /* mCardsContainer-Info.plist */,
-				FC184E557BBCDE1538E73F66B976756E /* mCardsContainer-prefix.pch */,
-				23EAC71492159E46597E69569F63E8C3 /* mCardsContainer-umbrella.h */,
+				1ECC940AC0392B685248E0B745ED327C /* mCardsContainer.modulemap */,
+				FB54DDE9A79C034CDAE5DCF77A0A77A1 /* mCardsContainer.xcconfig */,
+				6F4D0283C25F2C74312152C38FF2B6A8 /* mCardsContainer-dummy.m */,
+				2E8E889D3F240D253B947AEF26AD642D /* mCardsContainer-Info.plist */,
+				A005E2C6EBC067188A8AD8A5C82E6E94 /* mCardsContainer-prefix.pch */,
+				83F5B80D224175026DDDE018E024EEB9 /* mCardsContainer-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/mCardsContainer";
+			sourceTree = "<group>";
+		};
+		BFCF2F837195D1B5DDE12EDB6D19E0E2 /* mCardsContainer */ = {
+			isa = PBXGroup;
+			children = (
+				564A6314C25BD6F424D24B634D17A356 /* BasicCollectionViewLayout.swift */,
+				DED335AB794DCD210A01160B768F35E5 /* CardsCollectionViewController.swift */,
+				2A582704681DA97FCD5B12CAA69C0B5F /* CardsContainer.swift */,
+				47E8B8DEC7E09810BF21019A83B61611 /* CardsContainerBuilder.swift */,
+				BA6904574FB244A2FCCAC12A548F77B8 /* CardsContentCell.swift */,
+				9F33478D6FDB9FDF47B982873E47293C /* CardsHorizontalLayout.swift */,
+				2D7B525C2009CF786E199F98138651F9 /* CardsLayoutAttributes.swift */,
+				E360FB583AB7C724A65DFCDAA5F26A96 /* CardsMenuLayout.swift */,
+				C003F673A5BDF9AD3BD468D170C53212 /* DefaultAnimator.swift */,
+				0A1EABF4CFDDC6732441741EAB834A7A /* LayoutConfig.swift */,
+				6EF440C25A94AB7C6FAD58338F45FF77 /* Pod */,
+				BBE309975B6E75AF85AA944FC79F77AE /* Support Files */,
+			);
+			name = mCardsContainer;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				B428916056C6D6F9693B67D587FC4F0F /* Development Pods */,
+				07E3FCB2600048EBF2794EDFA009747F /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				06D9C0FB3DAD22453D4B1D1BB4E12697 /* Products */,
 				9A3444F623884F9CE7B00B9E07A47A3D /* Targets Support Files */,
@@ -191,16 +229,6 @@
 				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E22E0C9D440BDF425786D9C5E53C1704 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				19445FF24BD1E11707ECB480F62FE76A /* LICENSE */,
-				8FDEC8B9542DF4200AC981439C828F40 /* mCardsContainer.podspec */,
-				DE1A67A021099ECFEA1405EF4C5208F7 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		E6568A149768C365945FBC7D40E02D13 /* Pods-mCardsContainer_Example */ = {
@@ -220,22 +248,6 @@
 			path = "Target Support Files/Pods-mCardsContainer_Example";
 			sourceTree = "<group>";
 		};
-		E7A8DD2CAE2C63ACA7D2C3D87F2DCB69 /* mCardsContainer */ = {
-			isa = PBXGroup;
-			children = (
-				C9AAE7E4A214648055A07E5FE35A6AE6 /* CardsCollectionViewController.swift */,
-				C4B286E9FEEDF3FC0C4F883381DC797E /* CardsContainer.swift */,
-				094BF4EF897558CA6F26BE240BDB594B /* CardsContainerBuilder.swift */,
-				95FFCAE2326AA51EF40527C0972C0783 /* CardsContentCell.swift */,
-				5B01ED61D64B011030ADCEACC139EC92 /* CardsHorizontalLayout.swift */,
-				BCBA4A48B13632A5DB382595AFCDF9BB /* DefaultAnimator.swift */,
-				E22E0C9D440BDF425786D9C5E53C1704 /* Pod */,
-				C5E13ABD5E9C82827077DB65D001628E /* Support Files */,
-			);
-			name = mCardsContainer;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -247,11 +259,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A58D5AE3DC63946DB398D794F2CD5679 /* Headers */ = {
+		783CE20A5F0508AE379ECC789E3EBF7E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A7155946638120105C56737168E1E6F /* mCardsContainer-umbrella.h in Headers */,
+				BC6FA80127CB580F070E0F6188836064 /* mCardsContainer-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,24 +278,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		13837FE15ED5A9B719849A20F754C328 /* mCardsContainer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FD2344483D27DA8ED7227E1EF9EE9C8B /* Build configuration list for PBXNativeTarget "mCardsContainer" */;
-			buildPhases = (
-				A58D5AE3DC63946DB398D794F2CD5679 /* Headers */,
-				C334BAE936ABC198ECBFAA335EABD056 /* Sources */,
-				89EB4539BC88F3D56A574C0115095774 /* Frameworks */,
-				E47EAEA26500032D2EE916CA08335A73 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = mCardsContainer;
-			productName = mCardsContainer;
-			productReference = 71632821C7783F3FDAD75BD60432DC11 /* mCardsContainer.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		6582AD18B74F165678FBC90FD5267BCB /* Pods-mCardsContainer_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FA012B14301472ECB6F45A71C451A5D /* Build configuration list for PBXNativeTarget "Pods-mCardsContainer_Example" */;
@@ -322,6 +316,24 @@
 			productReference = 44CF6F44543334E80268DE9B776D99EB /* Pods_mCardsContainer_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		7AAC0044C16596B098EEB3B80FF6E10C /* mCardsContainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9647C7FB811B62918963F31337632137 /* Build configuration list for PBXNativeTarget "mCardsContainer" */;
+			buildPhases = (
+				783CE20A5F0508AE379ECC789E3EBF7E /* Headers */,
+				43329D47EB4CDDECBF5237D92FBBB769 /* Sources */,
+				89C1BBAC7DC54E9862DAB03A9F24D908 /* Frameworks */,
+				0C04FFB367B2A0DE066489AE3CFFDBFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mCardsContainer;
+			productName = mCardsContainer;
+			productReference = 71632821C7783F3FDAD75BD60432DC11 /* mCardsContainer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -343,7 +355,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13837FE15ED5A9B719849A20F754C328 /* mCardsContainer */,
+				7AAC0044C16596B098EEB3B80FF6E10C /* mCardsContainer */,
 				6582AD18B74F165678FBC90FD5267BCB /* Pods-mCardsContainer_Example */,
 				7867C1AFDD6D4F7C4445DA9E5C1F47C0 /* Pods-mCardsContainer_Tests */,
 			);
@@ -351,6 +363,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0C04FFB367B2A0DE066489AE3CFFDBFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6981174B78CFE29FFBC239BA01AFF0C2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -359,13 +378,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9F408D3D3C81D0E97C61CEC7EFEE7CCD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E47EAEA26500032D2EE916CA08335A73 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -383,17 +395,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C334BAE936ABC198ECBFAA335EABD056 /* Sources */ = {
+		43329D47EB4CDDECBF5237D92FBBB769 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C358041790E4A4F1692E867959928BF0 /* CardsCollectionViewController.swift in Sources */,
-				9E6AD048633964CD47089CF17FA482A6 /* CardsContainer.swift in Sources */,
-				E5E944EF7CEB6D6EE235EC0F7524FC58 /* CardsContainerBuilder.swift in Sources */,
-				EE8ADDF8756CBE4E4A49E8F7D626974C /* CardsContentCell.swift in Sources */,
-				52065F235E3D4E963D125AFC3D020BED /* CardsHorizontalLayout.swift in Sources */,
-				0E1A767AC455EA757C6DF3F83AF4DEFB /* DefaultAnimator.swift in Sources */,
-				5B3B30310868DD1A240311FCEE38E74C /* mCardsContainer-dummy.m in Sources */,
+				933F400471AA9DD928BFD5FF0FFCA04B /* BasicCollectionViewLayout.swift in Sources */,
+				DA8DCD7F318BB79FA1CBB2299EDDC1DA /* CardsCollectionViewController.swift in Sources */,
+				9DD374810E7BAC3713E6B18C34F139CF /* CardsContainer.swift in Sources */,
+				EE6DA90FB5EC6A216D71C2D6C32948F2 /* CardsContainerBuilder.swift in Sources */,
+				72F7BF4F811B1F392723799CA1EB8DF7 /* CardsContentCell.swift in Sources */,
+				ECBB0EA0501967667C8EA7393E1EECD1 /* CardsHorizontalLayout.swift in Sources */,
+				30A6347F138EDAB6958F6E76CBE04391 /* CardsLayoutAttributes.swift in Sources */,
+				61CCF9BEE4E41A6B5D2EF689FA88FDA4 /* CardsMenuLayout.swift in Sources */,
+				CF05B4C92D64CC06F2EC88C92F926EAA /* DefaultAnimator.swift in Sources */,
+				98091F18990557CB66953E583514503A /* LayoutConfig.swift in Sources */,
+				419DB937A0290EE43FA1E3D358228AA5 /* mCardsContainer-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +433,7 @@
 		CB0BDB56442B11C5F34B76213FEA9711 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = mCardsContainer;
-			target = 13837FE15ED5A9B719849A20F754C328 /* mCardsContainer */;
+			target = 7AAC0044C16596B098EEB3B80FF6E10C /* mCardsContainer */;
 			targetProxy = 771A949AB560D651625070B1A1CC0F00 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -554,39 +570,6 @@
 			};
 			name = Release;
 		};
-		6312C937599B2993B304D86E3B712738 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33A1595F6D326F89423B3F6160AFC756 /* mCardsContainer.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/mCardsContainer/mCardsContainer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/mCardsContainer/mCardsContainer-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/mCardsContainer/mCardsContainer.modulemap";
-				PRODUCT_MODULE_NAME = mCardsContainer;
-				PRODUCT_NAME = mCardsContainer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		6DFA1578582149B7E24AD55CBA30F07A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -722,9 +705,42 @@
 			};
 			name = Release;
 		};
-		A9344194BEDE0C1777FC85D334925303 /* Release */ = {
+		C1FF45E94D0F8FBF44A06FAE2426F1BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33A1595F6D326F89423B3F6160AFC756 /* mCardsContainer.xcconfig */;
+			baseConfigurationReference = FB54DDE9A79C034CDAE5DCF77A0A77A1 /* mCardsContainer.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/mCardsContainer/mCardsContainer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/mCardsContainer/mCardsContainer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/mCardsContainer/mCardsContainer.modulemap";
+				PRODUCT_MODULE_NAME = mCardsContainer;
+				PRODUCT_NAME = mCardsContainer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E8456854136151A4333C02C4D7BB4C43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB54DDE9A79C034CDAE5DCF77A0A77A1 /* mCardsContainer.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -786,11 +802,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FD2344483D27DA8ED7227E1EF9EE9C8B /* Build configuration list for PBXNativeTarget "mCardsContainer" */ = {
+		9647C7FB811B62918963F31337632137 /* Build configuration list for PBXNativeTarget "mCardsContainer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6312C937599B2993B304D86E3B712738 /* Debug */,
-				A9344194BEDE0C1777FC85D334925303 /* Release */,
+				C1FF45E94D0F8FBF44A06FAE2426F1BC /* Debug */,
+				E8456854136151A4333C02C4D7BB4C43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

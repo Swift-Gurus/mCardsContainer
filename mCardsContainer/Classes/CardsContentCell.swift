@@ -45,3 +45,8 @@ class CardsContentCell: UICollectionViewCell {
     }
     
 }
+
+
+class CardsMenuContainer: UICollectionReusableView {
+    
+}

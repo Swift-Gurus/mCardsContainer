@@ -18,14 +18,19 @@ protocol CardsCollectionViewDelegate: class {
     func didTap(at index: Int, startFrame: CGRect)
 }
 
+
+
+
 class CardsCollectionViewController: UIViewController {
     
     let collectionView: UICollectionView
     var state: State = .collapsed
     var placeHolderViews: [UIView] = []
+    let suplementaryViewKind: String
     weak var delegate: CardsCollectionViewDelegate?
     
-    init(collectionLayout: UICollectionViewLayout) {
+    init(collectionLayout: UICollectionViewLayout, suplementaryViewKind: String) {
+        self.suplementaryViewKind = suplementaryViewKind
         self.collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionLayout)
         super.init(nibName: nil, bundle: nil)
     }
@@ -35,6 +40,10 @@ class CardsCollectionViewController: UIViewController {
     }
     
    
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,8 +56,12 @@ class CardsCollectionViewController: UIViewController {
         
         collectionView.backgroundColor = .red
         collectionView.register(CardsContentCell.self, forCellWithReuseIdentifier: "\(CardsContentCell.self)")
+        collectionView.register(CardsMenuContainer.self,
+                                forSupplementaryViewOfKind: suplementaryViewKind,
+                                withReuseIdentifier: suplementaryViewKind)
         collectionView.dataSource = self
         collectionView.delegate = self
+
     }
 }
 
@@ -70,12 +83,35 @@ extension CardsCollectionViewController: UICollectionViewDataSource  {
         cell.addContentView(view: placeHolderViews[indexPath.row])
         return cell
     }
-    
+    func collectionView(_ collectionView: UICollectionView,
+                        viewForSupplementaryElementOfKind kind: String,
+                        at indexPath: IndexPath) -> UICollectionReusableView {
+        guard let view = collectionView.dequeueReusableSupplementaryView(ofKind: suplementaryViewKind,
+                                                                         withReuseIdentifier: suplementaryViewKind,
+                                                                         for: indexPath) as? CardsMenuContainer else {
+                                                                        fatalError()
+        }
+        
+        view.backgroundColor = .green
+        return view
+    }
 }
 
 extension CardsCollectionViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let frame = collectionView.layoutAttributesForItem(at: IndexPath(row: 0, section: 0))?.frame else { return }
-        delegate?.didTap(at: indexPath.row, startFrame: frame)
+        guard let frame = collectionView.layoutAttributesForItem(at: indexPath)?.frame else { return }
+        
+        let newFrame = CGRect(x: frame.origin.x - collectionView.contentOffset.x,
+                              y: frame.origin.y - collectionView.contentOffset.y,
+                              width: frame.size.width,
+                              height: frame.size.height)
+        delegate?.didTap(at: indexPath.row, startFrame: newFrame)
     }
+    
+    
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        
+    }
+    
+    
 }

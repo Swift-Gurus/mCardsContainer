@@ -30,7 +30,12 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        let layoutConfig =  LayoutConfig(isPagingEnabled: true)
+        let cardsMenuConfig = CardsMenuLayoutConfig(cardsLayoutConfig: layoutConfig)
+        let layout = CardsMenuLayout(config: cardsMenuConfig)
         let builder = CardsContainerBuilder()
+        builder.collectionViewLayout = layout
+        builder.suplementaryViewKind = cardsMenuConfig.supplementaryViewKind
         builder.source = CardsDataSource()
         let container = builder.createContainer()
         present(container, animated: true, completion: nil)

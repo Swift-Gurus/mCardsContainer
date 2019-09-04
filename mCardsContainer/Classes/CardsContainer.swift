@@ -39,9 +39,11 @@ public class CardsContainer: UIViewController {
     }
     
     public init(collectionViewLayout: UICollectionViewLayout,
+                supplementaryViewKind: String,
                 source: CardsContainerDataSource,
                 animationProvider: Animator) {
-        collectionViewController = CardsCollectionViewController(collectionLayout: collectionViewLayout)
+        collectionViewController = CardsCollectionViewController(collectionLayout: collectionViewLayout,
+                                                                 suplementaryViewKind: supplementaryViewKind)
         self.source = source
         collectionViewController.placeHolderViews = source.controllers.map({ $0.placeholderView })
         self.animationProvider = animationProvider
@@ -55,7 +57,6 @@ public class CardsContainer: UIViewController {
         view.leftAnchor.constraint(equalTo: collectionView.leftAnchor).isActive = true
         view.rightAnchor.constraint(equalTo: collectionView.rightAnchor).isActive = true
     }
-    
     
     
     required init?(coder aDecoder: NSCoder) {
