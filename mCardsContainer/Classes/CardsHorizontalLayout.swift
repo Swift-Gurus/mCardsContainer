@@ -14,7 +14,7 @@ public class CardsHorizontalLayout: BasicCollectionViewLayout {
     private let config: LayoutConfig
     
     
-    private var currentItemIndex = 1
+    private(set) var currentItemIndex = 0
     
     private var widthProportion: CGFloat {
         return CGFloat(config.widthProportion)
@@ -58,6 +58,7 @@ public class CardsHorizontalLayout: BasicCollectionViewLayout {
         _collectionView.isScrollEnabled = config.scrollingEnabled
         
         // Enable paging UI while scrolling set decelerationRate .fast
+        _collectionView.bounces = false
         _collectionView.decelerationRate = config.isPagingEnabled ? .fast : .normal
         cachedAttributes = stride(from: 0, to: _collectionView.numberOfSections, by: 1).map(getAttributesFor)
                                                                                        .flatMap({ $0 })
@@ -118,6 +119,7 @@ public class CardsHorizontalLayout: BasicCollectionViewLayout {
     
     override public func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint,
                                              withScrollingVelocity velocity: CGPoint) -> CGPoint {
+        
        let frame = currentAttributes(for: velocity).frame
        let newSuggestedOffset = CGPoint(x: frame.origin.x - basicOffset,
                                         y: proposedContentOffset.y)
@@ -147,3 +149,5 @@ public class CardsHorizontalLayout: BasicCollectionViewLayout {
         currentItemIndex -= 1
     }
 }
+
+    

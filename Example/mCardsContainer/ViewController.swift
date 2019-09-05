@@ -20,8 +20,11 @@ class CardsDataSource: CardsContainerDataSource {
     
 }
 
+
 class ViewController: UIViewController {
 
+    
+    let menu = CardControllerMenu()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,8 +38,9 @@ class ViewController: UIViewController {
         let layout = CardsMenuLayout(config: cardsMenuConfig)
         let builder = CardsContainerBuilder()
         builder.collectionViewLayout = layout
-        builder.suplementaryViewKind = cardsMenuConfig.supplementaryViewKind
+        builder.menuContainerKind = cardsMenuConfig.menuContainerKind
         builder.source = CardsDataSource()
+        builder.menuView = menu.view
         let container = builder.createContainer()
         present(container, animated: true, completion: nil)
     }

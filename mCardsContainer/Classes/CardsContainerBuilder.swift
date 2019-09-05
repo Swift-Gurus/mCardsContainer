@@ -13,15 +13,19 @@ public final class CardsContainerBuilder {
     public var collectionViewLayout: UICollectionViewLayout = CardsHorizontalLayout(config: LayoutConfig(isPagingEnabled: true))
     public var animator: Animator = DefaultAnimator()
     public var source: CardsContainerDataSource?
-    public var suplementaryViewKind: String = ""
-    
+    public var menuContainerKind: String = ""
+    public var menuView: UIView = UIView(frame: .zero)
     public init() {} 
     public func createContainer() -> CardsContainer {
         guard let source = self.source else { fatalError("DataSource is not set") }
-        return CardsContainer(collectionViewLayout: collectionViewLayout,
-                              supplementaryViewKind: suplementaryViewKind,
-                              source: source,
-                              animationProvider: animator)
+        
+        let config = CardsContainerConfig(collectionViewLayout: collectionViewLayout,
+                                          source: source,
+                                          animationProvider: animator)
+        config.menuContainerKind = menuContainerKind
+        config.menuView = menuView
+        
+        return CardsContainer(config: config)
     }
     
     

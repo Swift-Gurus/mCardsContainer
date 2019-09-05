@@ -48,5 +48,33 @@ class CardsContentCell: UICollectionViewCell {
 
 
 class CardsMenuContainer: UICollectionReusableView {
+    private let tagValue = 99999
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        backgroundColor = .white
+        clipsToBounds = true
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func addContentView(view: UIView) {
+        view.tag = tagValue
+        view.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(view)
+        view.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        view.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        view.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+        view.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
+        
+    }
+    
+    
+    override func prepareForReuse() {
+        viewWithTag(tagValue)?.removeFromSuperview()
+    }
 }

@@ -9,11 +9,11 @@ import Foundation
 
 
 public struct CardsMenuLayoutConfig {
-    public let supplementaryViewKind: String
+    public let menuContainerKind: String
     let cardsLayoutConfig: LayoutConfig
     public init(kind: String = "CardsMenuKind",
                 cardsLayoutConfig: LayoutConfig) {
-        self.supplementaryViewKind = kind
+        self.menuContainerKind = kind
         self.cardsLayoutConfig = cardsLayoutConfig
     }
 }
@@ -26,7 +26,7 @@ public final class  CardsMenuLayout:  CardsHorizontalLayout {
     private var menuState: Bool = false
     public init(config: CardsMenuLayoutConfig) {
         self.config = config
-        menuAttributes = UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: config.supplementaryViewKind,
+        menuAttributes = UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: config.menuContainerKind,
                                                           with: IndexPath(row: 0, section: 0))
         super.init(config: config.cardsLayoutConfig)
     }
@@ -41,12 +41,6 @@ public final class  CardsMenuLayout:  CardsHorizontalLayout {
         return CGPoint(x: attributes.frame.origin.x  - basicOffset, y: 0)
     }()
     
-    public override var collectionViewContentSize: CGSize {
-        let size = super.collectionViewContentSize
-        
-        return CGSize(width: size.width + menuAttributes.frame.size.width,
-                      height: size.height)
-    }
     public override func prepare() {
         let height = _collectionView.bounds.size.height
         menuAttributes.frame = CGRect(x: 0,
@@ -80,7 +74,23 @@ public final class  CardsMenuLayout:  CardsHorizontalLayout {
         return menuAttributes
     }
     
-    public override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
-      return super.targetContentOffset(forProposedContentOffset: proposedContentOffset, withScrollingVelocity: velocity)
+    public override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint,
+                                             withScrollingVelocity velocity: CGPoint) -> CGPoint {
+        
+        if currentItemIndex == 0 && velocity.x < 0 {
+            menuState = true
+            return menuAttributes.frame.origin
+        }
+        
+        if currentItemIndex == 0 && velocity.x > 0 && menuState {
+            menuState = false
+            let frame = cachedAttributes[currentItemIndex].frame
+            let newSuggestedOffset = CGPoint(x: frame.origin.x - basicOffset,
+                                             y: proposedContentOffset.y)
+            return newSuggestedOffset
+        }
+        
+        return super.targetContentOffset(forProposedContentOffset: proposedContentOffset, withScrollingVelocity: velocity)
+        
     }
 }

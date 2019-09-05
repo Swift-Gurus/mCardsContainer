@@ -18,7 +18,11 @@ protocol CardsCollectionViewDelegate: class {
     func didTap(at index: Int, startFrame: CGRect)
 }
 
-
+protocol CardsCollectionViewControllerConfig {
+    var collectionLayout: UICollectionViewLayout { get }
+    var menuContainerKind: String  { get }
+    var menuView: UIView { get }
+}
 
 
 class CardsCollectionViewController: UIViewController {
@@ -26,12 +30,14 @@ class CardsCollectionViewController: UIViewController {
     let collectionView: UICollectionView
     var state: State = .collapsed
     var placeHolderViews: [UIView] = []
-    let suplementaryViewKind: String
+    let menuContainerKind: String
+    let menuView: UIView
     weak var delegate: CardsCollectionViewDelegate?
     
-    init(collectionLayout: UICollectionViewLayout, suplementaryViewKind: String) {
-        self.suplementaryViewKind = suplementaryViewKind
-        self.collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionLayout)
+    init(config: CardsCollectionViewControllerConfig) {
+        self.menuContainerKind = config.menuContainerKind
+        self.collectionView = UICollectionView(frame: .zero, collectionViewLayout: config.collectionLayout)
+        self.menuView = config.menuView
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -56,9 +62,12 @@ class CardsCollectionViewController: UIViewController {
         
         collectionView.backgroundColor = .red
         collectionView.register(CardsContentCell.self, forCellWithReuseIdentifier: "\(CardsContentCell.self)")
-        collectionView.register(CardsMenuContainer.self,
-                                forSupplementaryViewOfKind: suplementaryViewKind,
-                                withReuseIdentifier: suplementaryViewKind)
+        if !menuContainerKind.isEmpty {
+            collectionView.register(CardsMenuContainer.self,
+                                    forSupplementaryViewOfKind: menuContainerKind,
+                                    withReuseIdentifier: menuContainerKind)
+        }
+     
         collectionView.dataSource = self
         collectionView.delegate = self
 
@@ -86,13 +95,13 @@ extension CardsCollectionViewController: UICollectionViewDataSource  {
     func collectionView(_ collectionView: UICollectionView,
                         viewForSupplementaryElementOfKind kind: String,
                         at indexPath: IndexPath) -> UICollectionReusableView {
-        guard let view = collectionView.dequeueReusableSupplementaryView(ofKind: suplementaryViewKind,
-                                                                         withReuseIdentifier: suplementaryViewKind,
+        guard let view = collectionView.dequeueReusableSupplementaryView(ofKind: menuContainerKind,
+                                                                         withReuseIdentifier: menuContainerKind,
                                                                          for: indexPath) as? CardsMenuContainer else {
                                                                         fatalError()
         }
         
-        view.backgroundColor = .green
+        view.addContentView(view: menuView)
         return view
     }
 }

@@ -28,6 +28,25 @@ public protocol Animator {
                           completion: @escaping () -> Void)
 }
 
+
+public final class CardsContainerConfig: CardsCollectionViewControllerConfig {
+    let collectionLayout: UICollectionViewLayout
+    let source:  CardsContainerDataSource
+    let animationProvider: Animator
+    
+    var menuContainerKind: String = ""
+    var menuView: UIView = UIView(frame: .zero)
+    
+ 
+    init(collectionViewLayout: UICollectionViewLayout,
+         source: CardsContainerDataSource,
+         animationProvider: Animator) {
+        self.source = source
+        self.animationProvider = animationProvider
+        self.collectionLayout = collectionViewLayout
+    }
+}
+
 public class CardsContainer: UIViewController {
     
     private let collectionViewController: CardsCollectionViewController
@@ -38,15 +57,11 @@ public class CardsContainer: UIViewController {
         return collectionViewController.view
     }
     
-    public init(collectionViewLayout: UICollectionViewLayout,
-                supplementaryViewKind: String,
-                source: CardsContainerDataSource,
-                animationProvider: Animator) {
-        collectionViewController = CardsCollectionViewController(collectionLayout: collectionViewLayout,
-                                                                 suplementaryViewKind: supplementaryViewKind)
-        self.source = source
+    public init(config: CardsContainerConfig) {
+        collectionViewController = CardsCollectionViewController(config: config)
+        self.source = config.source
         collectionViewController.placeHolderViews = source.controllers.map({ $0.placeholderView })
-        self.animationProvider = animationProvider
+        self.animationProvider = config.animationProvider
         super.init(nibName: nil, bundle: nil)
         self.collectionViewController.delegate = self
         
