@@ -20,7 +20,6 @@ class CardsDataSource: CardsContainerDataSource {
     
 }
 
-
 class ViewController: UIViewController {
 
     
@@ -37,10 +36,12 @@ class ViewController: UIViewController {
         let cardsMenuConfig = CardsMenuLayoutConfig(cardsLayoutConfig: layoutConfig)
         let layout = CardsMenuLayout(config: cardsMenuConfig)
         let builder = CardsContainerBuilder()
+        
         builder.collectionViewLayout = layout
         builder.menuContainerKind = cardsMenuConfig.menuContainerKind
         builder.source = CardsDataSource()
         builder.menuView = menu.view
+        builder.navigationView = NavigationView()
         let container = builder.createContainer()
         present(container, animated: true, completion: nil)
     }
