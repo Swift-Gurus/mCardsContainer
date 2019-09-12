@@ -128,8 +128,8 @@ extension CardsCollectionViewController: UICollectionViewDelegate {
         let pageWidth = collectionView.bounds.width * CGFloat(layoutConfig.widthProportion)
         let currentOffsetX = scrollView.contentOffset.x
         
-        if currentOffsetX > pageWidth {
-            navigationView.alpha = CGFloat(Double(currentOffsetX / pageWidth))
+        if currentOffsetX >= pageWidth {
+            navigationView.alpha = 1
         } else if currentOffsetX < pageWidth {
             navigationView.alpha = CGFloat(1 - Double((pageWidth - currentOffsetX) / pageWidth))
         }
