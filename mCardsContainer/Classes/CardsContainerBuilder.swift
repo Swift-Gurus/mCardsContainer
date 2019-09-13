@@ -17,12 +17,20 @@ public final class CardsContainerBuilder {
     public var menuContainerKind: String = ""
     public var menuView: UIView = UIView(frame: .zero)
     public var navigationView: UIView = UIView(frame: .zero)
-    public init() {} 
+    
+    public init(source: CardsContainerDataSource) {
+        self.source = source
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     public func createContainer() -> CardsContainer {
         guard let source = self.source else { fatalError("DataSource is not set") }
         
         let config = CardsContainerConfig(collectionViewLayout: collectionViewLayout,
-                                          source: source,
+                                          source: source, 
                                           layoutConfig: layoutConfig,
                                           animationProvider: animator)
         config.menuContainerKind = menuContainerKind

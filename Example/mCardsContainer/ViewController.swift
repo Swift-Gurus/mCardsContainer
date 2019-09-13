@@ -35,11 +35,11 @@ class ViewController: UIViewController {
         let layoutConfig =  LayoutConfig(isPagingEnabled: true)
         let cardsMenuConfig = CardsMenuLayoutConfig(cardsLayoutConfig: layoutConfig)
         let layout = CardsMenuLayout(config: cardsMenuConfig)
-        let builder = CardsContainerBuilder()
+        let dataSource = CardsDataSource()
         
+        let builder = CardsContainerBuilder(source: dataSource)
         builder.collectionViewLayout = layout
         builder.menuContainerKind = cardsMenuConfig.menuContainerKind
-        builder.source = CardsDataSource()
         builder.menuView = menu.view
         builder.navigationView = NavigationView()
         let container = builder.createContainer()
