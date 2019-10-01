@@ -12,11 +12,14 @@ import UIKit
 final class CardControllerMenu: UITableViewController {
     
     
-    let items = ["Footware", "Bags", "Accessories"]
+    let items = ["Footwear", "Handbags", "Accessories"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        tableView.separatorStyle = .none
+        tableView.backgroundColor = .red
+    
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -32,6 +35,11 @@ final class CardControllerMenu: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
         cell.textLabel?.text = items[indexPath.row]
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 35)
+        cell.backgroundColor = .clear
+        cell.selectionStyle = .none
+        
         return cell
     }
 }
+
