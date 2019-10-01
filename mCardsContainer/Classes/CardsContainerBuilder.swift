@@ -17,6 +17,7 @@ public final class CardsContainerBuilder {
     public var menuContainerKind: String = ""
     public var menuView: UIView = UIView(frame: .zero)
     public var navigationView: UIView = UIView(frame: .zero)
+    public var navigationViewHeightProportion: Float = 0.1
     
     public init(source: CardsContainerDataSource) {
         self.source = source
@@ -36,6 +37,7 @@ public final class CardsContainerBuilder {
         config.menuContainerKind = menuContainerKind
         config.menuView = menuView
         config.navigationView = navigationView
+        config.navigationViewHeightProportion = navigationViewHeightProportion
         
         return CardsContainer(config: config)
     }

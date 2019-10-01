@@ -21,7 +21,7 @@ class NavigationView: UIView {
         label.topAnchor.constraint(equalTo: topAnchor).isActive = true
         label.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         label.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
-        label.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        label.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         
         label.textColor = .black
         label.font = .boldSystemFont(ofSize: 40)

@@ -23,7 +23,7 @@ protocol CardsCollectionViewControllerConfig {
     var menuContainerKind: String  { get }
     var menuView: UIView { get }
     var navigationView: UIView { get }
-    var layoutConfig: LayoutConfig { get }
+    var navigationViewHeightProportion: Float { get }
 }
 
 
@@ -35,16 +35,15 @@ class CardsCollectionViewController: UIViewController {
     let menuContainerKind: String
     let menuView: UIView
     let navigationView: UIView
-    let layoutConfig: LayoutConfig
     
     weak var delegate: CardsCollectionViewDelegate?
-
+    private let navigationViewHeightProportion: CGFloat
     init(config: CardsCollectionViewControllerConfig) {
         self.menuContainerKind = config.menuContainerKind
         self.collectionView = UICollectionView(frame: .zero, collectionViewLayout: config.collectionLayout)
         self.menuView = config.menuView
         self.navigationView  = config.navigationView
-        self.layoutConfig = config.layoutConfig
+        self.navigationViewHeightProportion =  CGFloat(config.navigationViewHeightProportion)
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -73,7 +72,7 @@ class CardsCollectionViewController: UIViewController {
         navigationView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         navigationView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         navigationView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        navigationView.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        navigationView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: navigationViewHeightProportion).isActive = true
 
         collectionView.backgroundColor = .red
         collectionView.register(CardsContentCell.self, forCellWithReuseIdentifier: "\(CardsContentCell.self)")
@@ -124,15 +123,15 @@ extension CardsCollectionViewController: UICollectionViewDataSource  {
 extension CardsCollectionViewController: UICollectionViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
-        let pageWidth = collectionView.bounds.width * CGFloat(layoutConfig.widthProportion)
-        let currentOffsetX = scrollView.contentOffset.x
-        
-        if currentOffsetX >= pageWidth {
-            navigationView.alpha = 1
-        } else if currentOffsetX < pageWidth {
-            navigationView.alpha = CGFloat(1 - Double((pageWidth - currentOffsetX) / pageWidth))
+        guard let menuViewWidth = collectionView.visibleSupplementaryViews(ofKind: menuContainerKind)
+                                                .first
+                                                .map({ $0.frame.size.width }) else {
+            return
         }
+        
+        let currentOffsetX = scrollView.contentOffset.x
+        navigationView.alpha = CGFloat(1 - Double((menuViewWidth - currentOffsetX) / menuViewWidth))
+
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

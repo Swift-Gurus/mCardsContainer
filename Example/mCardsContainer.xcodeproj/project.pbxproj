@@ -17,6 +17,7 @@
 		89156D032315717700E639DF /* PlaceHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89156D022315717700E639DF /* PlaceHolderView.swift */; };
 		89156D05231571AE00E639DF /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89156D04231571AE00E639DF /* CardController.swift */; };
 		896B3AB82321553000CEB0E0 /* CardControllerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B3AB72321553000CEB0E0 /* CardControllerMenu.swift */; };
+		89896D582343863700BA2087 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89896D572343863700BA2087 /* NavigationView.swift */; };
 		BF6535D7FE1003BEF3441E86 /* Pods_mCardsContainer_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA832BF0ABF79ACEC6576D11 /* Pods_mCardsContainer_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		89156D022315717700E639DF /* PlaceHolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderView.swift; sourceTree = "<group>"; };
 		89156D04231571AE00E639DF /* CardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
 		896B3AB72321553000CEB0E0 /* CardControllerMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardControllerMenu.swift; sourceTree = "<group>"; };
+		89896D572343863700BA2087 /* NavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		951FECB859EE56364A52DDE4 /* mCardsContainer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = mCardsContainer.podspec; path = ../mCardsContainer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95B462CFF4F57360BF151E73 /* Pods-mCardsContainer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mCardsContainer_Tests.debug.xcconfig"; path = "Target Support Files/Pods-mCardsContainer_Tests/Pods-mCardsContainer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A04C6610E8203BAF2D93A01E /* Pods-mCardsContainer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mCardsContainer_Example.release.xcconfig"; path = "Target Support Files/Pods-mCardsContainer_Example/Pods-mCardsContainer_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		607FACD21AFB9204008FA782 /* Example for mCardsContainer */ = {
 			isa = PBXGroup;
 			children = (
+				89896D572343863700BA2087 /* NavigationView.swift */,
 				896B3AB72321553000CEB0E0 /* CardControllerMenu.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
@@ -348,6 +351,7 @@
 				89156D05231571AE00E639DF /* CardController.swift in Sources */,
 				896B3AB82321553000CEB0E0 /* CardControllerMenu.swift in Sources */,
 				89156D032315717700E639DF /* PlaceHolderView.swift in Sources */,
+				89896D582343863700BA2087 /* NavigationView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

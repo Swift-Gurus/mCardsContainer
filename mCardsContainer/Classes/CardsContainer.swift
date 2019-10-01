@@ -30,6 +30,7 @@ public protocol Animator {
 
 
 public final class CardsContainerConfig: CardsCollectionViewControllerConfig {
+   
 
     let collectionLayout: UICollectionViewLayout
     let source:  CardsContainerDataSource
@@ -39,7 +40,7 @@ public final class CardsContainerConfig: CardsCollectionViewControllerConfig {
     var menuContainerKind: String = ""
     var menuView: UIView = UIView(frame: .zero)
     var navigationView: UIView = UIView(frame: .zero)
-    
+    var navigationViewHeightProportion: Float = 0.1
  
     init(collectionViewLayout: UICollectionViewLayout,
          source: CardsContainerDataSource,
