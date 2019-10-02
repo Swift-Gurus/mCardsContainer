@@ -1,5 +1,5 @@
 PODS:
-  - mCardsContainer (0.1.0)
+  - mCardsContainer (0.1.1)
 
 DEPENDENCIES:
   - mCardsContainer (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  mCardsContainer: 439416cdf3a32e556a458f226af11399a63b8e2c
+  mCardsContainer: b622fc5d923cc94ec9543cdbc65901954659bc88
 
 PODFILE CHECKSUM: 80f7766bf2148e471f252dc68179eb0aa9ecb610
 

@@ -18,15 +18,32 @@ protocol CardsCollectionViewDelegate: class {
     func didTap(at index: Int, startFrame: CGRect)
 }
 
+protocol CardsCollectionViewControllerConfig {
+    var collectionLayout: UICollectionViewLayout { get }
+    var menuContainerKind: String  { get }
+    var menuView: UIView { get }
+    var navigationView: UIView { get }
+    var navigationViewHeightProportion: Float { get }
+}
+
+
 class CardsCollectionViewController: UIViewController {
     
     let collectionView: UICollectionView
     var state: State = .collapsed
     var placeHolderViews: [UIView] = []
-    weak var delegate: CardsCollectionViewDelegate?
+    let menuContainerKind: String
+    let menuView: UIView
+    let navigationView: UIView
     
-    init(collectionLayout: UICollectionViewLayout) {
-        self.collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionLayout)
+    weak var delegate: CardsCollectionViewDelegate?
+    private let navigationViewHeightProportion: CGFloat
+    init(config: CardsCollectionViewControllerConfig) {
+        self.menuContainerKind = config.menuContainerKind
+        self.collectionView = UICollectionView(frame: .zero, collectionViewLayout: config.collectionLayout)
+        self.menuView = config.menuView
+        self.navigationView  = config.navigationView
+        self.navigationViewHeightProportion =  CGFloat(config.navigationViewHeightProportion)
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -35,6 +52,10 @@ class CardsCollectionViewController: UIViewController {
     }
     
    
+    public override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,10 +66,25 @@ class CardsCollectionViewController: UIViewController {
         view.leftAnchor.constraint(equalTo: collectionView.leftAnchor).isActive = true
         view.rightAnchor.constraint(equalTo: collectionView.rightAnchor).isActive = true
         
+        navigationView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(navigationView)
+        
+        navigationView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        navigationView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        navigationView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        navigationView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: navigationViewHeightProportion).isActive = true
+
         collectionView.backgroundColor = .red
         collectionView.register(CardsContentCell.self, forCellWithReuseIdentifier: "\(CardsContentCell.self)")
+        if !menuContainerKind.isEmpty {
+            collectionView.register(CardsMenuContainer.self,
+                                    forSupplementaryViewOfKind: menuContainerKind,
+                                    withReuseIdentifier: menuContainerKind)
+        }
+     
         collectionView.dataSource = self
         collectionView.delegate = self
+
     }
 }
 
@@ -70,12 +106,41 @@ extension CardsCollectionViewController: UICollectionViewDataSource  {
         cell.addContentView(view: placeHolderViews[indexPath.row])
         return cell
     }
-    
+    func collectionView(_ collectionView: UICollectionView,
+                        viewForSupplementaryElementOfKind kind: String,
+                        at indexPath: IndexPath) -> UICollectionReusableView {
+        guard let view = collectionView.dequeueReusableSupplementaryView(ofKind: menuContainerKind,
+                                                                         withReuseIdentifier: menuContainerKind,
+                                                                         for: indexPath) as? CardsMenuContainer else {
+                                                                        fatalError()
+        }
+        
+        view.addContentView(view: menuView)
+        return view
+    }
 }
 
 extension CardsCollectionViewController: UICollectionViewDelegate {
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        guard let menuViewWidth = collectionView.visibleSupplementaryViews(ofKind: menuContainerKind)
+                                                .first
+                                                .map({ $0.frame.size.width }) else {
+            return
+        }
+        
+        let currentOffsetX = scrollView.contentOffset.x
+        navigationView.alpha = CGFloat(1 - Double((menuViewWidth - currentOffsetX) / menuViewWidth))
+
+    }
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let frame = collectionView.layoutAttributesForItem(at: IndexPath(row: 0, section: 0))?.frame else { return }
-        delegate?.didTap(at: indexPath.row, startFrame: frame)
+        guard let frame = collectionView.layoutAttributesForItem(at: indexPath)?.frame else { return }
+        
+        let newFrame = CGRect(x: frame.origin.x - collectionView.contentOffset.x,
+                              y: frame.origin.y - collectionView.contentOffset.y,
+                              width: frame.size.width,
+                              height: frame.size.height)
+        delegate?.didTap(at: indexPath.row, startFrame: newFrame)
     }
 }

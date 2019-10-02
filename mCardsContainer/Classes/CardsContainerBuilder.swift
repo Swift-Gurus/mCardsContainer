@@ -10,17 +10,36 @@ import Foundation
 
 public final class CardsContainerBuilder {
     
-    public var collectionViewLayout: UICollectionViewLayout = CardsHorizontalLayout(config: LayoutConfig())
+    public var collectionViewLayout: UICollectionViewLayout = CardsHorizontalLayout(config: LayoutConfig(isPagingEnabled: true))
     public var animator: Animator = DefaultAnimator()
+    public var layoutConfig: LayoutConfig = LayoutConfig()
     public var source: CardsContainerDataSource?
+    public var menuContainerKind: String = ""
+    public var menuView: UIView = UIView(frame: .zero)
+    public var navigationView: UIView = UIView(frame: .zero)
+    public var navigationViewHeightProportion: Float = 0.1
     
+    public init(source: CardsContainerDataSource) {
+        self.source = source
+    }
     
-    public init() {} 
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     public func createContainer() -> CardsContainer {
         guard let source = self.source else { fatalError("DataSource is not set") }
-        return CardsContainer(collectionViewLayout: collectionViewLayout,
-                              source: source,
-                              animationProvider: animator)
+        
+        let config = CardsContainerConfig(collectionViewLayout: collectionViewLayout,
+                                          source: source, 
+                                          layoutConfig: layoutConfig,
+                                          animationProvider: animator)
+        config.menuContainerKind = menuContainerKind
+        config.menuView = menuView
+        config.navigationView = navigationView
+        config.navigationViewHeightProportion = navigationViewHeightProportion
+        
+        return CardsContainer(config: config)
     }
     
     
