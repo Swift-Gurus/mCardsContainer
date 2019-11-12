@@ -22,6 +22,21 @@
 		9DD374810E7BAC3713E6B18C34F139CF /* CardsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A582704681DA97FCD5B12CAA69C0B5F /* CardsContainer.swift */; };
 		A77F52B89633731A16A4265DDD88A084 /* Pods-mCardsContainer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC0112066D7C7BE0B03AF70571D90AA8 /* Pods-mCardsContainer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC6FA80127CB580F070E0F6188836064 /* mCardsContainer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F5B80D224175026DDDE018E024EEB9 /* mCardsContainer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE5963D8237B0938002825A0 /* AnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5963D5237B0938002825A0 /* AnimationFactory.swift */; };
+		CE5963D9237B0938002825A0 /* AHContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5963D6237B0938002825A0 /* AHContainerViewController.swift */; };
+		CE5963DA237B0938002825A0 /* DimmingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5963D7237B0938002825A0 /* DimmingViewModel.swift */; };
+		CE5963DC237B0944002825A0 /* VCContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5963DB237B0944002825A0 /* VCContainer.swift */; };
+		CE5963E5237B0959002825A0 /* SlideRightTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5963DD237B0959002825A0 /* SlideRightTransitioner.swift */; };
+		CE5963E6237B0959002825A0 /* PopoverSlideUpTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5963DE237B0959002825A0 /* PopoverSlideUpTransitioner.swift */; };
+		CE5963E7237B0959002825A0 /* SlideDownTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5963DF237B0959002825A0 /* SlideDownTransitioner.swift */; };
+		CE5963E8237B0959002825A0 /* NoAnimationTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5963E0237B0959002825A0 /* NoAnimationTransitioner.swift */; };
+		CE5963E9237B0959002825A0 /* SlideUpTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5963E1237B0959002825A0 /* SlideUpTransitioner.swift */; };
+		CE5963EA237B0959002825A0 /* SlideLeftTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5963E2237B0959002825A0 /* SlideLeftTransitioner.swift */; };
+		CE5963EB237B0959002825A0 /* ITransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5963E3237B0959002825A0 /* ITransitioner.swift */; };
+		CE5963EC237B095A002825A0 /* CrossDissolveTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5963E4237B0959002825A0 /* CrossDissolveTransitioner.swift */; };
+		CE5963EE237B096D002825A0 /* ALTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5963ED237B096D002825A0 /* ALTapGestureRecognizer.swift */; };
+		CE5963F2237B0A15002825A0 /* OptionalExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5963F0237B0A15002825A0 /* OptionalExt.swift */; };
+		CE5963F3237B0A15002825A0 /* ALEither.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5963F1237B0A15002825A0 /* ALEither.swift */; };
 		CF05B4C92D64CC06F2EC88C92F926EAA /* DefaultAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C003F673A5BDF9AD3BD468D170C53212 /* DefaultAnimator.swift */; };
 		DA8DCD7F318BB79FA1CBB2299EDDC1DA /* CardsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED335AB794DCD210A01160B768F35E5 /* CardsCollectionViewController.swift */; };
 		ECBB0EA0501967667C8EA7393E1EECD1 /* CardsHorizontalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F33478D6FDB9FDF47B982873E47293C /* CardsHorizontalLayout.swift */; };
@@ -54,20 +69,20 @@
 		2A582704681DA97FCD5B12CAA69C0B5F /* CardsContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsContainer.swift; path = mCardsContainer/Classes/CardsContainer.swift; sourceTree = "<group>"; };
 		2D7B525C2009CF786E199F98138651F9 /* CardsLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsLayoutAttributes.swift; path = mCardsContainer/Classes/CardsLayoutAttributes.swift; sourceTree = "<group>"; };
 		2E8E889D3F240D253B947AEF26AD642D /* mCardsContainer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "mCardsContainer-Info.plist"; sourceTree = "<group>"; };
-		44CF6F44543334E80268DE9B776D99EB /* Pods_mCardsContainer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_mCardsContainer_Tests.framework; path = "Pods-mCardsContainer_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44CF6F44543334E80268DE9B776D99EB /* Pods_mCardsContainer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mCardsContainer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E8B8DEC7E09810BF21019A83B61611 /* CardsContainerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsContainerBuilder.swift; path = mCardsContainer/Classes/CardsContainerBuilder.swift; sourceTree = "<group>"; };
-		4A81D63F2FD2300EF22522DF53D5920C /* Pods_mCardsContainer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_mCardsContainer_Example.framework; path = "Pods-mCardsContainer_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A81D63F2FD2300EF22522DF53D5920C /* Pods_mCardsContainer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mCardsContainer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51875AD78340544954A6C5A8BD834E9A /* Pods-mCardsContainer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-mCardsContainer_Example.modulemap"; sourceTree = "<group>"; };
 		564A6314C25BD6F424D24B634D17A356 /* BasicCollectionViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicCollectionViewLayout.swift; path = mCardsContainer/Classes/BasicCollectionViewLayout.swift; sourceTree = "<group>"; };
 		57F18F2B17AD2E3950646DBE3AC6E319 /* Pods-mCardsContainer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mCardsContainer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		60A96DE96D1FE80229909C44985C65A1 /* Pods-mCardsContainer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mCardsContainer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		69E489DC906776C9D5274896CB81E51B /* Pods-mCardsContainer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-mCardsContainer_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6F4D0283C25F2C74312152C38FF2B6A8 /* mCardsContainer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "mCardsContainer-dummy.m"; sourceTree = "<group>"; };
-		71632821C7783F3FDAD75BD60432DC11 /* mCardsContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = mCardsContainer.framework; path = mCardsContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7780B906C0AF22D31FDE3F3452CB1BF3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		71632821C7783F3FDAD75BD60432DC11 /* mCardsContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mCardsContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7780B906C0AF22D31FDE3F3452CB1BF3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		83F5B80D224175026DDDE018E024EEB9 /* mCardsContainer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "mCardsContainer-umbrella.h"; sourceTree = "<group>"; };
 		8BE9C89063F9B8740F5976262A3FA4A4 /* Pods-mCardsContainer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-mCardsContainer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F33478D6FDB9FDF47B982873E47293C /* CardsHorizontalLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsHorizontalLayout.swift; path = mCardsContainer/Classes/CardsHorizontalLayout.swift; sourceTree = "<group>"; };
 		A005E2C6EBC067188A8AD8A5C82E6E94 /* mCardsContainer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "mCardsContainer-prefix.pch"; sourceTree = "<group>"; };
 		AB226C44CA3343FE257443A8343EEFA9 /* Pods-mCardsContainer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mCardsContainer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,10 +95,25 @@
 		C51804125E451F5C27772F2D99CE1778 /* Pods-mCardsContainer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-mCardsContainer_Tests.modulemap"; sourceTree = "<group>"; };
 		CA646FC0C2561CC351A2975B1F58D695 /* Pods-mCardsContainer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mCardsContainer_Example-frameworks.sh"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CEB13BD5312F5627E7A8B06D1444AB3D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		CE5963D5237B0938002825A0 /* AnimationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimationFactory.swift; path = ../../../mCardsContainer/Classes/AHContainer/AnimationFactory.swift; sourceTree = "<group>"; };
+		CE5963D6237B0938002825A0 /* AHContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AHContainerViewController.swift; path = ../../../mCardsContainer/Classes/AHContainer/AHContainerViewController.swift; sourceTree = "<group>"; };
+		CE5963D7237B0938002825A0 /* DimmingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DimmingViewModel.swift; path = ../../../mCardsContainer/Classes/AHContainer/DimmingViewModel.swift; sourceTree = "<group>"; };
+		CE5963DB237B0944002825A0 /* VCContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VCContainer.swift; path = ../../../mCardsContainer/Classes/AHContainer/Protocols/VCContainer.swift; sourceTree = "<group>"; };
+		CE5963DD237B0959002825A0 /* SlideRightTransitioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideRightTransitioner.swift; path = ../../../mCardsContainer/Classes/AHContainer/Transitioners/SlideRightTransitioner.swift; sourceTree = "<group>"; };
+		CE5963DE237B0959002825A0 /* PopoverSlideUpTransitioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PopoverSlideUpTransitioner.swift; path = ../../../mCardsContainer/Classes/AHContainer/Transitioners/PopoverSlideUpTransitioner.swift; sourceTree = "<group>"; };
+		CE5963DF237B0959002825A0 /* SlideDownTransitioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideDownTransitioner.swift; path = ../../../mCardsContainer/Classes/AHContainer/Transitioners/SlideDownTransitioner.swift; sourceTree = "<group>"; };
+		CE5963E0237B0959002825A0 /* NoAnimationTransitioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoAnimationTransitioner.swift; path = ../../../mCardsContainer/Classes/AHContainer/Transitioners/NoAnimationTransitioner.swift; sourceTree = "<group>"; };
+		CE5963E1237B0959002825A0 /* SlideUpTransitioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideUpTransitioner.swift; path = ../../../mCardsContainer/Classes/AHContainer/Transitioners/SlideUpTransitioner.swift; sourceTree = "<group>"; };
+		CE5963E2237B0959002825A0 /* SlideLeftTransitioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideLeftTransitioner.swift; path = ../../../mCardsContainer/Classes/AHContainer/Transitioners/SlideLeftTransitioner.swift; sourceTree = "<group>"; };
+		CE5963E3237B0959002825A0 /* ITransitioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ITransitioner.swift; path = ../../../mCardsContainer/Classes/AHContainer/Transitioners/ITransitioner.swift; sourceTree = "<group>"; };
+		CE5963E4237B0959002825A0 /* CrossDissolveTransitioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CrossDissolveTransitioner.swift; path = ../../../mCardsContainer/Classes/AHContainer/Transitioners/CrossDissolveTransitioner.swift; sourceTree = "<group>"; };
+		CE5963ED237B096D002825A0 /* ALTapGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ALTapGestureRecognizer.swift; path = ../../../mCardsContainer/Classes/AHContainer/Utils/ALTapGestureRecognizer.swift; sourceTree = "<group>"; };
+		CE5963F0237B0A15002825A0 /* OptionalExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalExt.swift; sourceTree = "<group>"; };
+		CE5963F1237B0A15002825A0 /* ALEither.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALEither.swift; sourceTree = "<group>"; };
+		CEB13BD5312F5627E7A8B06D1444AB3D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D911770717165AD82655457506E1163B /* Pods-mCardsContainer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mCardsContainer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DED335AB794DCD210A01160B768F35E5 /* CardsCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsCollectionViewController.swift; path = mCardsContainer/Classes/CardsCollectionViewController.swift; sourceTree = "<group>"; };
-		E25D1F0AF81B5CD83D2E51B20152F322 /* mCardsContainer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = mCardsContainer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E25D1F0AF81B5CD83D2E51B20152F322 /* mCardsContainer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = mCardsContainer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E360FB583AB7C724A65DFCDAA5F26A96 /* CardsMenuLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsMenuLayout.swift; path = mCardsContainer/Classes/CardsMenuLayout.swift; sourceTree = "<group>"; };
 		FB54DDE9A79C034CDAE5DCF77A0A77A1 /* mCardsContainer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = mCardsContainer.xcconfig; sourceTree = "<group>"; };
 		FF6D98842FCBA31D81A9C4890D041C34 /* Pods-mCardsContainer_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mCardsContainer_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -130,6 +160,7 @@
 		07E3FCB2600048EBF2794EDFA009747F /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
+				CE5963D4237B08AA002825A0 /* AHContainer */,
 				BFCF2F837195D1B5DDE12EDB6D19E0E2 /* mCardsContainer */,
 			);
 			name = "Development Pods";
@@ -210,6 +241,37 @@
 			);
 			name = mCardsContainer;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		CE5963D4237B08AA002825A0 /* AHContainer */ = {
+			isa = PBXGroup;
+			children = (
+				CE5963EF237B09E7002825A0 /* ALEither */,
+				CE5963ED237B096D002825A0 /* ALTapGestureRecognizer.swift */,
+				CE5963E4237B0959002825A0 /* CrossDissolveTransitioner.swift */,
+				CE5963E3237B0959002825A0 /* ITransitioner.swift */,
+				CE5963E0237B0959002825A0 /* NoAnimationTransitioner.swift */,
+				CE5963DE237B0959002825A0 /* PopoverSlideUpTransitioner.swift */,
+				CE5963DF237B0959002825A0 /* SlideDownTransitioner.swift */,
+				CE5963E2237B0959002825A0 /* SlideLeftTransitioner.swift */,
+				CE5963DD237B0959002825A0 /* SlideRightTransitioner.swift */,
+				CE5963E1237B0959002825A0 /* SlideUpTransitioner.swift */,
+				CE5963DB237B0944002825A0 /* VCContainer.swift */,
+				CE5963D6237B0938002825A0 /* AHContainerViewController.swift */,
+				CE5963D5237B0938002825A0 /* AnimationFactory.swift */,
+				CE5963D7237B0938002825A0 /* DimmingViewModel.swift */,
+			);
+			name = AHContainer;
+			path = ../../mCardsContainer/Classes/AHContainer;
+			sourceTree = "<group>";
+		};
+		CE5963EF237B09E7002825A0 /* ALEither */ = {
+			isa = PBXGroup;
+			children = (
+				CE5963F1237B0A15002825A0 /* ALEither.swift */,
+				CE5963F0237B0A15002825A0 /* OptionalExt.swift */,
+			);
+			path = ALEither;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -348,6 +410,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -399,17 +462,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5963EE237B096D002825A0 /* ALTapGestureRecognizer.swift in Sources */,
 				933F400471AA9DD928BFD5FF0FFCA04B /* BasicCollectionViewLayout.swift in Sources */,
 				DA8DCD7F318BB79FA1CBB2299EDDC1DA /* CardsCollectionViewController.swift in Sources */,
+				CE5963F2237B0A15002825A0 /* OptionalExt.swift in Sources */,
+				CE5963DA237B0938002825A0 /* DimmingViewModel.swift in Sources */,
 				9DD374810E7BAC3713E6B18C34F139CF /* CardsContainer.swift in Sources */,
 				EE6DA90FB5EC6A216D71C2D6C32948F2 /* CardsContainerBuilder.swift in Sources */,
 				72F7BF4F811B1F392723799CA1EB8DF7 /* CardsContentCell.swift in Sources */,
+				CE5963D9237B0938002825A0 /* AHContainerViewController.swift in Sources */,
+				CE5963D8237B0938002825A0 /* AnimationFactory.swift in Sources */,
+				CE5963E9237B0959002825A0 /* SlideUpTransitioner.swift in Sources */,
+				CE5963E5237B0959002825A0 /* SlideRightTransitioner.swift in Sources */,
 				ECBB0EA0501967667C8EA7393E1EECD1 /* CardsHorizontalLayout.swift in Sources */,
+				CE5963EA237B0959002825A0 /* SlideLeftTransitioner.swift in Sources */,
+				CE5963E6237B0959002825A0 /* PopoverSlideUpTransitioner.swift in Sources */,
 				30A6347F138EDAB6958F6E76CBE04391 /* CardsLayoutAttributes.swift in Sources */,
 				61CCF9BEE4E41A6B5D2EF689FA88FDA4 /* CardsMenuLayout.swift in Sources */,
+				CE5963F3237B0A15002825A0 /* ALEither.swift in Sources */,
+				CE5963DC237B0944002825A0 /* VCContainer.swift in Sources */,
 				CF05B4C92D64CC06F2EC88C92F926EAA /* DefaultAnimator.swift in Sources */,
 				98091F18990557CB66953E583514503A /* LayoutConfig.swift in Sources */,
 				419DB937A0290EE43FA1E3D358228AA5 /* mCardsContainer-dummy.m in Sources */,
+				CE5963E8237B0959002825A0 /* NoAnimationTransitioner.swift in Sources */,
+				CE5963EC237B095A002825A0 /* CrossDissolveTransitioner.swift in Sources */,
+				CE5963E7237B0959002825A0 /* SlideDownTransitioner.swift in Sources */,
+				CE5963EB237B0959002825A0 /* ITransitioner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,8 +641,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
