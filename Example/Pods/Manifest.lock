@@ -1,16 +1,27 @@
 PODS:
-  - mCardsContainer (0.1.1)
+  - AHContainer (0.2.2):
+    - ALEither
+  - ALEither (0.1.8)
+  - mCardsContainer (0.1.2):
+    - AHContainer
 
 DEPENDENCIES:
   - mCardsContainer (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AHContainer
+    - ALEither
 
 EXTERNAL SOURCES:
   mCardsContainer:
     :path: "../"
 
 SPEC CHECKSUMS:
-  mCardsContainer: b622fc5d923cc94ec9543cdbc65901954659bc88
+  AHContainer: 870bb0204341298f60d40eacb6185c6a7e41a4ef
+  ALEither: 57cfaba77b3a2c2e15741b16213b515d9bc839a6
+  mCardsContainer: 9cc251e6decfb0a1dcf38ee23ec44dbe8ae3449c
 
 PODFILE CHECKSUM: 80f7766bf2148e471f252dc68179eb0aa9ecb610
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.4

@@ -323,16 +323,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-mCardsContainer_Example/Pods-mCardsContainer_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AHContainer/AHContainer.framework",
+				"${BUILT_PRODUCTS_DIR}/ALEither/ALEither.framework",
 				"${BUILT_PRODUCTS_DIR}/mCardsContainer/mCardsContainer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AHContainer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ALEither.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/mCardsContainer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
