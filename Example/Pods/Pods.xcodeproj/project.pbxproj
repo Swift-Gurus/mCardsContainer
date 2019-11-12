@@ -32,6 +32,8 @@
 		7948A8DE1FFFD53E5A83899CC926E0C3 /* CrossDissolveTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0B65585C39E7BFBEF785F3ED771C5 /* CrossDissolveTransitioner.swift */; };
 		86689D9099417558E0A063A1927EFA69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED39F0739850B16BFC9EFD84A2D8D3CA /* Foundation.framework */; };
 		87C7E12AED3BE6C20A17F04F50F567F6 /* OptionalExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF675D34B177C9F6786349EFA2FCF6D7 /* OptionalExt.swift */; };
+		898CBDCC237B31740056DC09 /* CardsCollectionViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898CBDCA237B31420056DC09 /* CardsCollectionViewContainer.swift */; };
+		898CBDCE237B33060056DC09 /* CardsNavigationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898CBDCD237B33060056DC09 /* CardsNavigationContainer.swift */; };
 		8AD5E61608D09AB5279157D00AD983AC /* mCardsContainer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69F05B4DCE28D412C2DEA7771D9D67D5 /* mCardsContainer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		914701BE54B7497EE1718CB5AD4EC2F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED39F0739850B16BFC9EFD84A2D8D3CA /* Foundation.framework */; };
 		93AB53024E5B0565B3D8982D40FF5327 /* AHContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED4FB62673BA4BCE5B8F36973781F92 /* AHContainerViewController.swift */; };
@@ -107,7 +109,7 @@
 		11E08EBCC857F491BAF5B1EE5CC1F29C /* ALEither.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ALEither.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14133E5F5E6DDD33B7759A3CC7985F8F /* ITransitioner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ITransitioner.swift; path = AHContainerViewController/Classes/Transitioners/ITransitioner.swift; sourceTree = "<group>"; };
 		2623A4DE1A9BA24766C60BB9EF25DA0D /* Pods-mCardsContainer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-mCardsContainer_Tests-umbrella.h"; sourceTree = "<group>"; };
-		29772B534C67B5F7EB1B48D22D51A7B0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		29772B534C67B5F7EB1B48D22D51A7B0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2A582704681DA97FCD5B12CAA69C0B5F /* CardsContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsContainer.swift; path = mCardsContainer/Classes/CardsContainer.swift; sourceTree = "<group>"; };
 		2D7B525C2009CF786E199F98138651F9 /* CardsLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsLayoutAttributes.swift; path = mCardsContainer/Classes/CardsLayoutAttributes.swift; sourceTree = "<group>"; };
 		2E2C517EDD35157486D43D24DBEF7F6C /* ALEither-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALEither-prefix.pch"; sourceTree = "<group>"; };
@@ -123,7 +125,7 @@
 		47E8B8DEC7E09810BF21019A83B61611 /* CardsContainerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsContainerBuilder.swift; path = mCardsContainer/Classes/CardsContainerBuilder.swift; sourceTree = "<group>"; };
 		4CCF7661FAD464FECFCFA0343601455E /* NoAnimationTransitioner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoAnimationTransitioner.swift; path = AHContainerViewController/Classes/Transitioners/NoAnimationTransitioner.swift; sourceTree = "<group>"; };
 		4D5FCCB9C5C1AC3FC8163C76CFEE334B /* mCardsContainer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = mCardsContainer.modulemap; sourceTree = "<group>"; };
-		53042A498398EE89FBB30113AEE4DC96 /* mCardsContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = mCardsContainer.framework; path = mCardsContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53042A498398EE89FBB30113AEE4DC96 /* mCardsContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mCardsContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5532CBC66A415927235468BA325BE359 /* ALEither.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ALEither.modulemap; sourceTree = "<group>"; };
 		564A6314C25BD6F424D24B634D17A356 /* BasicCollectionViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicCollectionViewLayout.swift; path = mCardsContainer/Classes/BasicCollectionViewLayout.swift; sourceTree = "<group>"; };
 		56508822CBDAB09696BF251CED3B714D /* DimmingViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DimmingViewModel.swift; path = AHContainerViewController/Classes/DimmingViewModel.swift; sourceTree = "<group>"; };
@@ -139,23 +141,25 @@
 		7355F3B078D1A187231ECC66D3987B27 /* AHContainer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHContainer-prefix.pch"; sourceTree = "<group>"; };
 		73FA526A89429118317CCAA6CF926AF0 /* AHContainer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHContainer.xcconfig; sourceTree = "<group>"; };
 		75FF33D604B6933B074FC54894305193 /* AHContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		76EE78D9F5BF57732C6E6610BED8BB3A /* Pods_mCardsContainer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_mCardsContainer_Tests.framework; path = "Pods-mCardsContainer_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76EE78D9F5BF57732C6E6610BED8BB3A /* Pods_mCardsContainer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mCardsContainer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BEA30930DAA3BEE473FC175D341305 /* Pods-mCardsContainer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-mCardsContainer_Tests.modulemap"; sourceTree = "<group>"; };
-		7A9B2F2D2BE099725984CAA1C636097D /* mCardsContainer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = mCardsContainer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7A9B2F2D2BE099725984CAA1C636097D /* mCardsContainer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = mCardsContainer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7B9047534217DC0652E26E69E56E2518 /* Pods-mCardsContainer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mCardsContainer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7F17247A7B817187E3AD3E5F7A2FDBDA /* mCardsContainer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = mCardsContainer.xcconfig; sourceTree = "<group>"; };
 		8679C886237FE0171F3BA9B618F7DFA2 /* Pods-mCardsContainer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-mCardsContainer_Tests-dummy.m"; sourceTree = "<group>"; };
-		920693FEF6947FDA1517680E78AEE5CD /* AHContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHContainer.framework; path = AHContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		898CBDCA237B31420056DC09 /* CardsCollectionViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardsCollectionViewContainer.swift; path = mCardsContainer/Classes/CardsCollectionViewContainer.swift; sourceTree = "<group>"; };
+		898CBDCD237B33060056DC09 /* CardsNavigationContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardsNavigationContainer.swift; path = mCardsContainer/Classes/CardsNavigationContainer.swift; sourceTree = "<group>"; };
+		920693FEF6947FDA1517680E78AEE5CD /* AHContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		972D5D19BF16E98AE3B554F718CBB88B /* Pods-mCardsContainer_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mCardsContainer_Example-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F33478D6FDB9FDF47B982873E47293C /* CardsHorizontalLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsHorizontalLayout.swift; path = mCardsContainer/Classes/CardsHorizontalLayout.swift; sourceTree = "<group>"; };
 		B5FFB060F19108221F8F602F11A9AFA7 /* AHContainer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AHContainer-Info.plist"; sourceTree = "<group>"; };
-		B81A77E12987C11D645A9890378DE085 /* Pods_mCardsContainer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_mCardsContainer_Example.framework; path = "Pods-mCardsContainer_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81A77E12987C11D645A9890378DE085 /* Pods_mCardsContainer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mCardsContainer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6904574FB244A2FCCAC12A548F77B8 /* CardsContentCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsContentCell.swift; path = mCardsContainer/Classes/CardsContentCell.swift; sourceTree = "<group>"; };
 		C003F673A5BDF9AD3BD468D170C53212 /* DefaultAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultAnimator.swift; path = mCardsContainer/Classes/DefaultAnimator.swift; sourceTree = "<group>"; };
-		C12E579F7B5BE85CD54CFC3837AC2C98 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C12E579F7B5BE85CD54CFC3837AC2C98 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C19FC096B850FE67AD85F05E729AF67E /* Pods-mCardsContainer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mCardsContainer_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C22A00CA2632CF6D64EED554FBED3C8D /* ALEither.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ALEither.framework; path = ALEither.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C22A00CA2632CF6D64EED554FBED3C8D /* ALEither.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ALEither.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE65F004546E6714E97E945AF47100BF /* Pods-mCardsContainer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-mCardsContainer_Example-dummy.m"; sourceTree = "<group>"; };
 		D4038489603701AC5A41EAFF72115A70 /* mCardsContainer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "mCardsContainer-prefix.pch"; sourceTree = "<group>"; };
 		D79B71EEBD28DB6C20A52080C9B40E5E /* SlideLeftTransitioner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideLeftTransitioner.swift; path = AHContainerViewController/Classes/Transitioners/SlideLeftTransitioner.swift; sourceTree = "<group>"; };
@@ -280,7 +284,6 @@
 				DF675D34B177C9F6786349EFA2FCF6D7 /* OptionalExt.swift */,
 				9AA4056DD012945C1E0EEEB6B536066B /* Support Files */,
 			);
-			name = ALEither;
 			path = ALEither;
 			sourceTree = "<group>";
 		};
@@ -326,7 +329,6 @@
 				E7B179A2C689CD9CF38B8401E962CC30 /* VCContainer.swift */,
 				8EE5D1D0490DF28F9F67AEAAA03DBB7E /* Support Files */,
 			);
-			name = AHContainer;
 			path = AHContainer;
 			sourceTree = "<group>";
 		};
@@ -370,9 +372,11 @@
 		BFCF2F837195D1B5DDE12EDB6D19E0E2 /* mCardsContainer */ = {
 			isa = PBXGroup;
 			children = (
+				898CBDCA237B31420056DC09 /* CardsCollectionViewContainer.swift */,
 				564A6314C25BD6F424D24B634D17A356 /* BasicCollectionViewLayout.swift */,
 				DED335AB794DCD210A01160B768F35E5 /* CardsCollectionViewController.swift */,
 				2A582704681DA97FCD5B12CAA69C0B5F /* CardsContainer.swift */,
+				898CBDCD237B33060056DC09 /* CardsNavigationContainer.swift */,
 				47E8B8DEC7E09810BF21019A83B61611 /* CardsContainerBuilder.swift */,
 				BA6904574FB244A2FCCAC12A548F77B8 /* CardsContentCell.swift */,
 				9F33478D6FDB9FDF47B982873E47293C /* CardsHorizontalLayout.swift */,
@@ -661,12 +665,14 @@
 				D6EAD00A6FAEFD62A5D929CCF11904DF /* CardsCollectionViewController.swift in Sources */,
 				2342E566D36DC2957EFDBF0AD5CD77C8 /* CardsContainer.swift in Sources */,
 				0AD08870CA8B71FC931CB1574FD50FCD /* CardsContainerBuilder.swift in Sources */,
+				898CBDCC237B31740056DC09 /* CardsCollectionViewContainer.swift in Sources */,
 				6F85113E8489EB342E2EC73C8BC58849 /* CardsContentCell.swift in Sources */,
 				03D1328AC5159F0188779C8B51A64104 /* CardsHorizontalLayout.swift in Sources */,
 				A8630DDDD2197B65A4BC3550D22FBCE2 /* CardsLayoutAttributes.swift in Sources */,
 				2D03661B216BC0CB1AF6B6F1416CE97F /* CardsMenuLayout.swift in Sources */,
 				AC66445B293043CD7B8BC4C2BB94EBC0 /* DefaultAnimator.swift in Sources */,
 				50EBEC05BFFA61FEC6002BBB78596C9B /* LayoutConfig.swift in Sources */,
+				898CBDCE237B33060056DC09 /* CardsNavigationContainer.swift in Sources */,
 				B25699C5B7BD853460DA6DC8E97ADC63 /* mCardsContainer-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -829,8 +835,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

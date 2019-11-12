@@ -16,18 +16,30 @@ enum State: Equatable {
 
 protocol CardsCollectionViewDelegate: class {
     func didTap(at index: Int, startFrame: CGRect)
+    func menuShownProgress(_ progress: CGFloat)
 }
 
-protocol CardsCollectionViewControllerConfig {
-    var collectionLayout: UICollectionViewLayout { get }
-    var menuContainerKind: String  { get }
-    var menuView: UIView { get }
-    var navigationView: UIView { get }
-    var navigationViewHeightProportion: Float { get }
+class CardsCollectionViewControllerConfig {
+    let collectionLayout: UICollectionViewLayout
+    var menuContainerKind: String = ""
+    var menuView: UIView = UIView(frame: .zero)
+    var navigationView: UIView = UIView(frame: .zero)
+    var navigationViewHeightProportion: Float = 0.1
+    
+    init(collectionLayout: UICollectionViewLayout) {
+        self.collectionLayout = collectionLayout
+    }
 }
 
 
-class CardsCollectionViewController: UIViewController {
+protocol CardsCollectionDelegatable: class {
+    var delegate: CardsCollectionViewDelegate? { get set }
+    var placeHolderViews: [UIView]  { get set }
+}
+
+typealias CardsCollectionViewController = UIViewController & CardsCollectionDelegatable
+
+class CardsCollectionViewControllerImp: CardsCollectionViewController {
     
     let collectionView: UICollectionView
     var state: State = .collapsed
@@ -89,7 +101,7 @@ class CardsCollectionViewController: UIViewController {
 }
 
 
-extension CardsCollectionViewController: UICollectionViewDataSource  {
+extension CardsCollectionViewControllerImp: UICollectionViewDataSource  {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -120,7 +132,7 @@ extension CardsCollectionViewController: UICollectionViewDataSource  {
     }
 }
 
-extension CardsCollectionViewController: UICollectionViewDelegate {
+extension CardsCollectionViewControllerImp: UICollectionViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         guard let menuViewWidth = collectionView.visibleSupplementaryViews(ofKind: menuContainerKind)
@@ -130,7 +142,9 @@ extension CardsCollectionViewController: UICollectionViewDelegate {
         }
         
         let currentOffsetX = scrollView.contentOffset.x
-        navigationView.alpha = CGFloat(1 - Double((menuViewWidth - currentOffsetX) / menuViewWidth))
+        let progress = (menuViewWidth - currentOffsetX) / menuViewWidth
+        let finalProgress = max(progress, 0)
+        navigationView.alpha = 1 - finalProgress
 
     }
 

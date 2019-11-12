@@ -8,6 +8,7 @@
 
 import UIKit
 import mCardsContainer
+import AHContainer
 
 class CardsDataSource: CardsContainerDataSource {
     var controllers: [UIViewController & CardPresentable] = [CardController(),
@@ -24,6 +25,8 @@ class ViewController: UIViewController {
 
     
     let menu = CardControllerMenu()
+    var container: VCContainer?
+    let provider = DefaultAnimationProviderFactory().provider(for: .crossDissolve(size: .equal), dimmingViewType: .noDimming)
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,13 +40,22 @@ class ViewController: UIViewController {
         let layout = CardsMenuLayout(config: cardsMenuConfig)
         let dataSource = CardsDataSource()
         
-        let builder = CardsContainerBuilder(source: dataSource)
+        let builder = CardsNavigationContainerBuilder(source: dataSource)
         builder.collectionViewLayout = layout
         builder.menuContainerKind = cardsMenuConfig.menuContainerKind
         builder.menuView = menu.view
         builder.navigationView = NavigationView()
-        let container = builder.createContainer()
-        present(container, animated: true, completion: nil)
+        let container = builder.createNavigationContainer()
+        self.container = container
+        builder.buttomView.backgroundColor = .lightGray
+        present(container, animated: true, completion: {
+            Thread.sleep(forTimeInterval: 2)
+            let newVC = UIViewController(nibName: nil, bundle: nil)
+            newVC.view.backgroundColor = .green
+            self.container?.push(controller: newVC, with: self.provider, completion: nil)
+        })
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -51,5 +63,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
 }
 
