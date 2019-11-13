@@ -34,8 +34,8 @@ public final class CardsContainerConfig {
     let source:  CardsContainerDataSource
     let animationProvider: Animator
     let collectionViewController: CardsCollectionViewController
-    let buttomViewHeightProportion: CGFloat
-    let buttomView: UIView
+    let bottomViewHeightProportion: CGFloat
+    let bottomView: UIView
     
     init(source: CardsContainerDataSource,
          collectionViewController: CardsCollectionViewController,
@@ -45,8 +45,8 @@ public final class CardsContainerConfig {
         self.collectionViewController = collectionViewController
         self.source = source
         self.animationProvider = animationProvider
-        self.buttomViewHeightProportion = buttomViewHeightProportion
-        self.buttomView = buttomView
+        self.bottomViewHeightProportion = buttomViewHeightProportion
+        self.bottomView = buttomView
     }
 }
 
@@ -73,7 +73,7 @@ public class CardsContainer: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         installTopView()
-        installMiddleView(bottomView: config.buttomView)
+        installMiddleView(bottomView: config.bottomView)
     }
 
     private func installTopView() {
@@ -97,7 +97,7 @@ public class CardsContainer: UIViewController {
         bottomView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         bottomView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         bottomView.heightAnchor.constraint(equalTo: view.heightAnchor,
-                                           multiplier: CGFloat(config.buttomViewHeightProportion)).isActive = true
+                                           multiplier: CGFloat(config.bottomViewHeightProportion)).isActive = true
    
     }
     

@@ -19,8 +19,8 @@ final class CardsNavigationContainer: UIViewController, VCContainer {
         let newConfig = CardsContainerConfig(source: config.source,
                                              collectionViewController: collectionView,
                                              animationProvider: config.animationProvider,
-                                             buttomView: config.buttomView,
-                                             buttomViewHeightProportion: config.buttomViewHeightProportion)
+                                             buttomView: config.bottomView,
+                                             buttomViewHeightProportion: config.bottomViewHeightProportion)
         cardsContainer = CardsContainer(config: newConfig)
         super.init(nibName: nil, bundle: nil)
     }
