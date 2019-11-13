@@ -29,27 +29,24 @@ public protocol Animator {
 }
 
 
-public final class CardsContainerConfig: CardsCollectionViewControllerConfig {
-   
+public final class CardsContainerConfig {
 
-    let collectionLayout: UICollectionViewLayout
     let source:  CardsContainerDataSource
     let animationProvider: Animator
-    var layoutConfig: LayoutConfig
+    let collectionViewController: CardsCollectionViewController
+    let bottomViewHeightProportion: CGFloat
+    let bottomView: UIView
     
-    var menuContainerKind: String = ""
-    var menuView: UIView = UIView(frame: .zero)
-    var navigationView: UIView = UIView(frame: .zero)
-    var navigationViewHeightProportion: Float = 0.1
- 
-    init(collectionViewLayout: UICollectionViewLayout,
-         source: CardsContainerDataSource,
-         layoutConfig: LayoutConfig,
-         animationProvider: Animator) {
+    init(source: CardsContainerDataSource,
+         collectionViewController: CardsCollectionViewController,
+         animationProvider: Animator,
+         buttomView: UIView = UIView(frame: .zero),
+         buttomViewHeightProportion: CGFloat = 0) {
+        self.collectionViewController = collectionViewController
         self.source = source
         self.animationProvider = animationProvider
-        self.collectionLayout = collectionViewLayout
-        self.layoutConfig = layoutConfig
+        self.bottomViewHeightProportion = buttomViewHeightProportion
+        self.bottomView = buttomView
     }
 }
 
@@ -58,27 +55,51 @@ public class CardsContainer: UIViewController {
     private let collectionViewController: CardsCollectionViewController
     private let source: CardsContainerDataSource
     private let animationProvider: Animator
-    
+    private let config: CardsContainerConfig
     private var collectionView: UIView {
         return collectionViewController.view
     }
-    
+         
     public init(config: CardsContainerConfig) {
-        collectionViewController = CardsCollectionViewController(config: config)
+        collectionViewController = config.collectionViewController
         self.source = config.source
         collectionViewController.placeHolderViews = source.controllers.map({ $0.placeholderView })
         self.animationProvider = config.animationProvider
+        self.config = config
         super.init(nibName: nil, bundle: nil)
-        self.collectionViewController.delegate = self
-        
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(collectionView)
-        view.safeAreaLayoutGuide.topAnchor.constraint(equalTo: collectionView.topAnchor).isActive = true
-        view.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: collectionView.bottomAnchor).isActive = true
-        view.leftAnchor.constraint(equalTo: collectionView.leftAnchor).isActive = true
-        view.rightAnchor.constraint(equalTo: collectionView.rightAnchor).isActive = true
     }
     
+    
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        installTopView()
+        installMiddleView(bottomView: config.bottomView)
+    }
+
+    private func installTopView() {
+        
+        self.collectionViewController.delegate = self
+        addChild(collectionViewController)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(collectionView)
+        collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        collectionView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        collectionView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+
+    }
+    
+    private func installMiddleView(bottomView: UIView) {
+        
+        bottomView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bottomView)
+        bottomView.topAnchor.constraint(equalTo: collectionView.bottomAnchor).isActive = true
+        bottomView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        bottomView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        bottomView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        bottomView.heightAnchor.constraint(equalTo: view.heightAnchor,
+                                           multiplier: CGFloat(config.bottomViewHeightProportion)).isActive = true
+   
+    }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -87,6 +108,10 @@ public class CardsContainer: UIViewController {
 }
 
 extension CardsContainer: CardsCollectionViewDelegate {
+    func menuShownProgress(_ progress: CGFloat) {
+        // for future use
+    }
+    
     func didTap(at index: Int, startFrame: CGRect) {
         let vc = source.controllers[index]
         let point = collectionView.convert(startFrame.origin, to: view)
