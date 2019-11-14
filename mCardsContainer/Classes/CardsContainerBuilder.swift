@@ -37,23 +37,25 @@ public class CardsContainerBuilder {
         let config = CardsContainerConfig(source: source,
                                           collectionViewController: cardsCollectionViewController,
                                           animationProvider: animator,
+                                          buttomView: UIView(frame: .zero),
                                           buttomViewHeightProportion: 0)
       
-    
         return CardsContainer(config: config)
     }
     
-    
     var cardsCollectionViewController: CardsCollectionViewController {
-        let collectionViewControllerConfig = CardsCollectionViewControllerConfig(collectionLayout: collectionViewLayout)
-        collectionViewControllerConfig.menuContainerKind = menuContainerKind
-        collectionViewControllerConfig.menuView = menuView
-        collectionViewControllerConfig.navigationView = navigationView
-        collectionViewControllerConfig.navigationViewHeightProportion = navigationViewHeightProportion
-        
         return CardsCollectionViewControllerImp(config: collectionViewControllerConfig)
     }
     
+    
+    var collectionViewControllerConfig: CardsCollectionViewControllerConfig {
+        let collectionViewControllerConfig = CardsCollectionViewControllerConfig(collectionLayout: collectionViewLayout)
+        collectionViewControllerConfig.menuContainerKind = menuContainerKind
+        collectionViewControllerConfig.menuView = menuView
+        collectionViewControllerConfig.topHeaderView = navigationView
+        collectionViewControllerConfig.topHeaderViewHeightProportion = navigationViewHeightProportion
+        return collectionViewControllerConfig
+    }
 }
 
 
@@ -70,6 +72,14 @@ public final class CardsNavigationContainerBuilder: CardsContainerBuilder {
                                           buttomViewHeightProportion: CGFloat(buttomViewHeightProportion))
         
         
-        return CardsNavigationContainer(config: config)
+        return NavigationContainerFacade(config: config)
+    }
+    
+    
+    override var collectionViewControllerConfig: CardsCollectionViewControllerConfig {
+        let config = super.collectionViewControllerConfig
+        config.footerHeightProportion = buttomViewHeightProportion
+        config.footerView = buttomView
+        return config
     }
 }

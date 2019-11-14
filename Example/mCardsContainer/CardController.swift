@@ -23,7 +23,7 @@ class CardController: UIViewController, CardPresentable {
     var closure:  (() -> Void)?
     override func viewDidLoad() {
         view.addSubview(mainView)
-        
+        placeholderView.backgroundColor = .lightGray
         mainView.translatesAutoresizingMaskIntoConstraints = false
         mainView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         mainView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true

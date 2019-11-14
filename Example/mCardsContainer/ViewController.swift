@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     
     let menu = CardControllerMenu()
     var container: VCContainer?
-    let provider = DefaultAnimationProviderFactory().provider(for: .crossDissolve(size: .equal), dimmingViewType: .noDimming)
+    let provider = DefaultAnimationProviderFactory().provider(for: .slideLeft(size: .init(width: 1, height: 0.9)), dimmingViewType: .noDimming)
     override func viewDidLoad() {
         super.viewDidLoad()
 
