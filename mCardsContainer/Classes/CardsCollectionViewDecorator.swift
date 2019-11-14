@@ -1,5 +1,5 @@
 //
-//  CardsCollectionViewContainer.swift
+//  CardsCollectionViewDecorator.swift
 //  AHContainer
 //
 //  Created by Alex Hmelevski on 2019-11-12.
@@ -8,7 +8,7 @@
 import Foundation
 import AHContainer
 
-final class CardsCollectionViewContainer: CardsCollectionViewController, VCContainer {
+final class CardsCollectionViewDecorator: CardsCollectionViewController, VCContainer {
     var delegate: CardsCollectionViewDelegate? {
         get { cardsContainer.delegate }
         set { cardsContainer.delegate = newValue }
@@ -21,7 +21,6 @@ final class CardsCollectionViewContainer: CardsCollectionViewController, VCConta
     
     let navigationContainer: ALViewControllerContainer
     let cardsContainer: CardsCollectionViewController
-    
     init(cardsContainer: CardsCollectionViewController) {
         self.cardsContainer = cardsContainer
         navigationContainer = ALViewControllerContainer(initialVC: cardsContainer)
@@ -30,6 +29,10 @@ final class CardsCollectionViewContainer: CardsCollectionViewController, VCConta
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        snapCardsContainer()
+    }
+    
+    private func snapCardsContainer() {
         view.addSubview(navigationContainer.view)
         navigationContainer.view.translatesAutoresizingMaskIntoConstraints = false
         view.topAnchor.constraint(equalTo: navigationContainer.view.topAnchor).isActive = true
@@ -37,6 +40,8 @@ final class CardsCollectionViewContainer: CardsCollectionViewController, VCConta
         view.leftAnchor.constraint(equalTo: navigationContainer.view.leftAnchor).isActive = true
         view.rightAnchor.constraint(equalTo: navigationContainer.view.rightAnchor).isActive = true
     }
+    
+    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

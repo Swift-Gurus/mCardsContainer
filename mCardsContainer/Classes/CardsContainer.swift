@@ -40,7 +40,7 @@ public final class CardsContainerConfig {
     init(source: CardsContainerDataSource,
          collectionViewController: CardsCollectionViewController,
          animationProvider: Animator,
-         buttomView: UIView = UIView(frame: .zero),
+         buttomView: UIView,
          buttomViewHeightProportion: CGFloat = 0) {
         self.collectionViewController = collectionViewController
         self.source = source
@@ -69,11 +69,9 @@ public class CardsContainer: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
-    
     public override func viewDidLoad() {
         super.viewDidLoad()
         installTopView()
-        installMiddleView(bottomView: config.bottomView)
     }
 
     private func installTopView() {
@@ -85,22 +83,9 @@ public class CardsContainer: UIViewController {
         collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         collectionView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         collectionView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+    }
 
-    }
-    
-    private func installMiddleView(bottomView: UIView) {
-        
-        bottomView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(bottomView)
-        bottomView.topAnchor.constraint(equalTo: collectionView.bottomAnchor).isActive = true
-        bottomView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        bottomView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        bottomView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        bottomView.heightAnchor.constraint(equalTo: view.heightAnchor,
-                                           multiplier: CGFloat(config.bottomViewHeightProportion)).isActive = true
-   
-    }
-    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

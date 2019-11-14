@@ -23,8 +23,10 @@ class CardsCollectionViewControllerConfig {
     let collectionLayout: UICollectionViewLayout
     var menuContainerKind: String = ""
     var menuView: UIView = UIView(frame: .zero)
-    var navigationView: UIView = UIView(frame: .zero)
-    var navigationViewHeightProportion: Float = 0.1
+    var topHeaderView: UIView = UIView(frame: .zero)
+    var topHeaderViewHeightProportion: Float = 0.1
+    var footerView: UIView = UIView(frame: .zero)
+    var footerHeightProportion: Float = 0.1
     
     init(collectionLayout: UICollectionViewLayout) {
         self.collectionLayout = collectionLayout
@@ -46,16 +48,22 @@ class CardsCollectionViewControllerImp: CardsCollectionViewController {
     var placeHolderViews: [UIView] = []
     let menuContainerKind: String
     let menuView: UIView
-    let navigationView: UIView
+    let topHeaderView: UIView
     
     weak var delegate: CardsCollectionViewDelegate?
     private let navigationViewHeightProportion: CGFloat
+    
+    let bottomHeaderView: UIView
+    let bottomHeaderViewProportion: CGFloat
+    
     init(config: CardsCollectionViewControllerConfig) {
         self.menuContainerKind = config.menuContainerKind
         self.collectionView = UICollectionView(frame: .zero, collectionViewLayout: config.collectionLayout)
         self.menuView = config.menuView
-        self.navigationView  = config.navigationView
-        self.navigationViewHeightProportion =  CGFloat(config.navigationViewHeightProportion)
+        self.topHeaderView  = config.topHeaderView
+        self.navigationViewHeightProportion =  CGFloat(config.topHeaderViewHeightProportion)
+        self.bottomHeaderView = config.footerView
+        self.bottomHeaderViewProportion = CGFloat(config.footerHeightProportion)
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -63,7 +71,6 @@ class CardsCollectionViewControllerImp: CardsCollectionViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-   
     public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
@@ -71,32 +78,47 @@ class CardsCollectionViewControllerImp: CardsCollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setUpHeader()
+        setUpCollectionView()
+        setUpFooter()
+    }
+    
+    private func setUpHeader() {
+        topHeaderView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(topHeaderView)
+               
+        topHeaderView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        topHeaderView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        topHeaderView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        topHeaderView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: navigationViewHeightProportion).isActive = true
+    }
+    
+    private func setUpFooter() {
+        bottomHeaderView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bottomHeaderView)
+        bottomHeaderView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        bottomHeaderView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        bottomHeaderView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        bottomHeaderView.heightAnchor.constraint(equalTo: view.heightAnchor,
+                                                multiplier: bottomHeaderViewProportion).isActive = true
+    }
+    
+    private func setUpCollectionView() {
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.backgroundColor = .clear
+        collectionView.register(CardsContentCell.self, forCellWithReuseIdentifier: "\(CardsContentCell.self)")
+        if !menuContainerKind.isEmpty {
+         collectionView.register(CardsMenuContainer.self,
+                                 forSupplementaryViewOfKind: menuContainerKind,
+                                 withReuseIdentifier: menuContainerKind)
+        }
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(collectionView)
         view.safeAreaLayoutGuide.topAnchor.constraint(equalTo: collectionView.topAnchor).isActive = true
         view.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: collectionView.bottomAnchor).isActive = true
         view.leftAnchor.constraint(equalTo: collectionView.leftAnchor).isActive = true
         view.rightAnchor.constraint(equalTo: collectionView.rightAnchor).isActive = true
-        
-        navigationView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(navigationView)
-        
-        navigationView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        navigationView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        navigationView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        navigationView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: navigationViewHeightProportion).isActive = true
-
-        collectionView.backgroundColor = .red
-        collectionView.register(CardsContentCell.self, forCellWithReuseIdentifier: "\(CardsContentCell.self)")
-        if !menuContainerKind.isEmpty {
-            collectionView.register(CardsMenuContainer.self,
-                                    forSupplementaryViewOfKind: menuContainerKind,
-                                    withReuseIdentifier: menuContainerKind)
-        }
-     
-        collectionView.dataSource = self
-        collectionView.delegate = self
-
     }
 }
 
@@ -144,7 +166,8 @@ extension CardsCollectionViewControllerImp: UICollectionViewDelegate {
         let currentOffsetX = scrollView.contentOffset.x
         let progress = (menuViewWidth - currentOffsetX) / menuViewWidth
         let finalProgress = max(progress, 0)
-        navigationView.alpha = 1 - finalProgress
+        topHeaderView.alpha = 1 - finalProgress
+        bottomHeaderView.alpha = topHeaderView.alpha
 
     }
 

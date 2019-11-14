@@ -1,5 +1,5 @@
 //
-//  CardsNavigationContainer.swift
+//  NavigationContainerFacade.swift
 //  mCardsContainer
 //
 //  Created by Alex Hmelevski on 2019-11-12.
@@ -8,13 +8,12 @@
 import Foundation
 import AHContainer
 
-final class CardsNavigationContainer: UIViewController, VCContainer {
+final class NavigationContainerFacade: UIViewController, VCContainer {
     
     let cardsContainer: CardsContainer
     let collectionViewControllerWrapper: VCContainer
-    
     init(config: CardsContainerConfig) {
-        let collectionView = CardsCollectionViewContainer(cardsContainer: config.collectionViewController)
+        let collectionView = CardsCollectionViewDecorator(cardsContainer: config.collectionViewController)
         collectionViewControllerWrapper = collectionView
         let newConfig = CardsContainerConfig(source: config.source,
                                              collectionViewController: collectionView,
@@ -55,6 +54,4 @@ final class CardsNavigationContainer: UIViewController, VCContainer {
     func pop(to vc: UIViewController, using provider: AnimationTransitionProvider, completion: ((Bool) -> Void)?) -> [UIViewController] {
         return collectionViewControllerWrapper.pop(to: vc, using: provider, completion: completion)
     }
-    
-    
 }
