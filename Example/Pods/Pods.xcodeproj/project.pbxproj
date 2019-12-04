@@ -7,53 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		037B746DE397B4B03A1C3C0695DE33DF /* BasicCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564A6314C25BD6F424D24B634D17A356 /* BasicCollectionViewLayout.swift */; };
-		03D1328AC5159F0188779C8B51A64104 /* CardsHorizontalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F33478D6FDB9FDF47B982873E47293C /* CardsHorizontalLayout.swift */; };
-		0AD08870CA8B71FC931CB1574FD50FCD /* CardsContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E8B8DEC7E09810BF21019A83B61611 /* CardsContainerBuilder.swift */; };
 		0C54B4870527CA503E52B01415EB5CAB /* DimmingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56508822CBDAB09696BF251CED3B714D /* DimmingViewModel.swift */; };
+		0F53AFDDA44D5E7F628F66F1EFC88156 /* CardsContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE0B73D80D8EE6345FEFCAAA540AB5C /* CardsContainerBuilder.swift */; };
 		0FA72D8C42AF85222CC920E4E9A31209 /* Pods-mCardsContainer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE65F004546E6714E97E945AF47100BF /* Pods-mCardsContainer_Example-dummy.m */; };
 		13AD9A184795CF0656B584AC1C71C31B /* VCContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B179A2C689CD9CF38B8401E962CC30 /* VCContainer.swift */; };
-		1ECA7FE9739B7A1CCE78FDB51202D82E /* AHContainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75FF33D604B6933B074FC54894305193 /* AHContainer.framework */; };
+		18D272216C50E3AF783227C3FFA2AB04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED39F0739850B16BFC9EFD84A2D8D3CA /* Foundation.framework */; };
+		1FCE2CA02FEFB061E19F07933399A280 /* CardsHorizontalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9553F755209791F301170C12EA25EB /* CardsHorizontalLayout.swift */; };
 		22092E58DA2D047835853990FF410912 /* ALEither.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E08EBCC857F491BAF5B1EE5CC1F29C /* ALEither.framework */; };
-		2342E566D36DC2957EFDBF0AD5CD77C8 /* CardsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A582704681DA97FCD5B12CAA69C0B5F /* CardsContainer.swift */; };
-		2D03661B216BC0CB1AF6B6F1416CE97F /* CardsMenuLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E360FB583AB7C724A65DFCDAA5F26A96 /* CardsMenuLayout.swift */; };
+		24397584099458453987F33CCC4BF669 /* CardsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448992C036944E40068A90F42B145EEB /* CardsCollectionViewController.swift */; };
+		2C6F15548B67208E3F2BDEA37890B501 /* CardsLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F8CEF5CAFE533050CCCA7A6E946A6 /* CardsLayoutAttributes.swift */; };
 		2D0A7A5C749BB9D9C19DD87990A3DEC0 /* AHContainer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F67C0ED95F1D9B8165763022E147D05B /* AHContainer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3590DC3D1DBB4DBB6C5F0CE293D53CBF /* Pods-mCardsContainer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7112FAF7D1723EFD5E1F2ADDE83BB003 /* Pods-mCardsContainer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		373357FC2FC517986FBFF1BB69FC5980 /* SlideRightTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396E8A27DC76EDD16BF27C33D6349D09 /* SlideRightTransitioner.swift */; };
 		3871C461F3536D8C96BDB7B1663357FD /* AnimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3DA832624ED52A58A8293CF83C18FF /* AnimationFactory.swift */; };
+		3C664398864AF2C60329F5E499A9FAE2 /* AHContainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75FF33D604B6933B074FC54894305193 /* AHContainer.framework */; };
+		3C896F5DC9757B20678DCA47E3ED4515 /* CardsMenuLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE155DECE90032C64863F6B9FB602F2 /* CardsMenuLayout.swift */; };
+		3F3FC3AA3C83438CEE3087D8F988257D /* DefaultAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AB41D9E9FB392B3ED78943F30BC97E /* DefaultAnimator.swift */; };
+		41CAF33174D9C39F304536964B0390F9 /* CardsCollectionViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C937918E4384F185156900920EAB35 /* CardsCollectionViewContainer.swift */; };
 		4883FAFE574C762427EC892D817FDD88 /* ITransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14133E5F5E6DDD33B7759A3CC7985F8F /* ITransitioner.swift */; };
 		4A0DB8347B199370FBD13673AEB25634 /* SlideDownTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEBAA642176CB106F2693D36D1CB127 /* SlideDownTransitioner.swift */; };
+		500421018DC6A8375001A12C5A1F12E8 /* CardsContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6010A04EC452B2159CCDDCE4B17328 /* CardsContentCell.swift */; };
 		507B63390EF979B600FDD2AF2498B283 /* SlideLeftTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79B71EEBD28DB6C20A52080C9B40E5E /* SlideLeftTransitioner.swift */; };
-		50EBEC05BFFA61FEC6002BBB78596C9B /* LayoutConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1EABF4CFDDC6732441741EAB834A7A /* LayoutConfig.swift */; };
+		567509F3651C603A75FBBC51F6A7732E /* mCardsContainer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E53FDF48A0682D93A04A01FC465CD2DD /* mCardsContainer-dummy.m */; };
+		61337CDA9BD0A783C1EDC8FC39F3A8CB /* mCardsContainer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4726016209BE126F8BECAB4825F61D80 /* mCardsContainer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		652AC5539463F98F78BA4CE580B04997 /* Pods-mCardsContainer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2623A4DE1A9BA24766C60BB9EF25DA0D /* Pods-mCardsContainer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E15A70479E4B97B9871436B8689B9A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED39F0739850B16BFC9EFD84A2D8D3CA /* Foundation.framework */; };
-		6F85113E8489EB342E2EC73C8BC58849 /* CardsContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6904574FB244A2FCCAC12A548F77B8 /* CardsContentCell.swift */; };
 		714AC1F853B0063978FC194611051BCC /* AHContainer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E947DC3E83130D9DBEA46B09FE537E0 /* AHContainer-dummy.m */; };
 		7948A8DE1FFFD53E5A83899CC926E0C3 /* CrossDissolveTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F0B65585C39E7BFBEF785F3ED771C5 /* CrossDissolveTransitioner.swift */; };
 		86689D9099417558E0A063A1927EFA69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED39F0739850B16BFC9EFD84A2D8D3CA /* Foundation.framework */; };
 		87C7E12AED3BE6C20A17F04F50F567F6 /* OptionalExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF675D34B177C9F6786349EFA2FCF6D7 /* OptionalExt.swift */; };
-		898CBDCC237B31740056DC09 /* CardsCollectionViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898CBDCA237B31420056DC09 /* CardsCollectionViewContainer.swift */; };
-		898CBDCE237B33060056DC09 /* CardsNavigationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898CBDCD237B33060056DC09 /* CardsNavigationContainer.swift */; };
-		8AD5E61608D09AB5279157D00AD983AC /* mCardsContainer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69F05B4DCE28D412C2DEA7771D9D67D5 /* mCardsContainer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9082963EE33F418A054DCC9B6A98B309 /* BasicCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACC88B9ED6AE2644FD8F8992905FDFB /* BasicCollectionViewLayout.swift */; };
 		914701BE54B7497EE1718CB5AD4EC2F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED39F0739850B16BFC9EFD84A2D8D3CA /* Foundation.framework */; };
 		93AB53024E5B0565B3D8982D40FF5327 /* AHContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED4FB62673BA4BCE5B8F36973781F92 /* AHContainerViewController.swift */; };
-		93B9AC070C6A63BCFD72AEC447C923BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED39F0739850B16BFC9EFD84A2D8D3CA /* Foundation.framework */; };
 		986EAAD4FDB4AF79993AD5E6E3A98087 /* PopoverSlideUpTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A24F3234AFC8ED7C6E0AA40F1CA38 /* PopoverSlideUpTransitioner.swift */; };
 		A2B7691B02E44995E4F1757EA4E93A67 /* ALEither.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6704F6CED9BD7568C67BB5379C2F63 /* ALEither.swift */; };
 		A3ACAD667433B7918FC8DCA7EB534D4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED39F0739850B16BFC9EFD84A2D8D3CA /* Foundation.framework */; };
-		A8630DDDD2197B65A4BC3550D22FBCE2 /* CardsLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7B525C2009CF786E199F98138651F9 /* CardsLayoutAttributes.swift */; };
-		AC66445B293043CD7B8BC4C2BB94EBC0 /* DefaultAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C003F673A5BDF9AD3BD468D170C53212 /* DefaultAnimator.swift */; };
-		B25699C5B7BD853460DA6DC8E97ADC63 /* mCardsContainer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B04F9150A795123AEFC41EEFFDCE52D /* mCardsContainer-dummy.m */; };
+		A5A81007247EDF84738C7841949C604F /* CardsNavigationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145CCD197A6A21E0974733A1DECCFEA5 /* CardsNavigationContainer.swift */; };
+		A93A86E79D8071DCC9C4E80218256B4A /* LayoutConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB34D2457496B2AA29A745BC8B1B826 /* LayoutConfig.swift */; };
 		BCA87CE743E6C1053BB8D1CEACB1FD80 /* ALTapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473E9EB4A27512EB6FAE4C38058CF733 /* ALTapGestureRecognizer.swift */; };
 		CACACC9A10E4061070072B888DB4EED6 /* SlideUpTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088BA124E06E7283F0EE8DC5D12365C7 /* SlideUpTransitioner.swift */; };
 		D43852647398A69F7C110B1BB9CCCBB0 /* ALEither-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CE7837370D5EF4DFC60969646B79B61 /* ALEither-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D6EAD00A6FAEFD62A5D929CCF11904DF /* CardsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED335AB794DCD210A01160B768F35E5 /* CardsCollectionViewController.swift */; };
 		DA342F5574F39F6F235AE3FF4725D197 /* NoAnimationTransitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF7661FAD464FECFCFA0343601455E /* NoAnimationTransitioner.swift */; };
+		DFA3711A1FC5D996BE0E7DD0F6D8F0B6 /* CardsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E637FB2AC2270354E3C935B36B516F1F /* CardsContainer.swift */; };
 		FA7CDD99BEB623A74BF01BEF244A2FB3 /* ALEither-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCE3642BF922A7D0D6FDF8515FFA1CE /* ALEither-dummy.m */; };
 		FFFE37FCDA1348838DF1F2B2682DE239 /* Pods-mCardsContainer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8679C886237FE0171F3BA9B618F7DFA2 /* Pods-mCardsContainer_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0A986ABC3ACC69414EF7EC20AD30451B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D2AB8C1D4FF91CBF9F91868F5C13241;
+			remoteInfo = AHContainer;
+		};
 		124B063A274F6A18F1F527E16A1F325B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -75,13 +82,6 @@
 			remoteGlobalIDString = 0153E1C80555E65ECE156988E104FB15;
 			remoteInfo = mCardsContainer;
 		};
-		3F866A704AE554D606AA11F30B71D8E6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2D2AB8C1D4FF91CBF9F91868F5C13241;
-			remoteInfo = AHContainer;
-		};
 		425C74B117852F160A11C6C00BB62EE2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -99,77 +99,77 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01AB41D9E9FB392B3ED78943F30BC97E /* DefaultAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultAnimator.swift; path = mCardsContainer/Classes/DefaultAnimator.swift; sourceTree = "<group>"; };
 		053CE882C8E613ABB6A6BB0BF281317B /* Pods-mCardsContainer_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mCardsContainer_Tests-Info.plist"; sourceTree = "<group>"; };
 		088BA124E06E7283F0EE8DC5D12365C7 /* SlideUpTransitioner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideUpTransitioner.swift; path = AHContainerViewController/Classes/Transitioners/SlideUpTransitioner.swift; sourceTree = "<group>"; };
-		0A1EABF4CFDDC6732441741EAB834A7A /* LayoutConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConfig.swift; path = mCardsContainer/Classes/LayoutConfig.swift; sourceTree = "<group>"; };
 		0CE7837370D5EF4DFC60969646B79B61 /* ALEither-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALEither-umbrella.h"; sourceTree = "<group>"; };
 		0D6704F6CED9BD7568C67BB5379C2F63 /* ALEither.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ALEither.swift; path = ALEither/Classes/ALEither.swift; sourceTree = "<group>"; };
 		0E7A24F3234AFC8ED7C6E0AA40F1CA38 /* PopoverSlideUpTransitioner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopoverSlideUpTransitioner.swift; path = AHContainerViewController/Classes/Transitioners/PopoverSlideUpTransitioner.swift; sourceTree = "<group>"; };
 		119A0198A472E765DE12198E1EE4F461 /* Pods-mCardsContainer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mCardsContainer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		11E08EBCC857F491BAF5B1EE5CC1F29C /* ALEither.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ALEither.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14133E5F5E6DDD33B7759A3CC7985F8F /* ITransitioner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ITransitioner.swift; path = AHContainerViewController/Classes/Transitioners/ITransitioner.swift; sourceTree = "<group>"; };
+		145CCD197A6A21E0974733A1DECCFEA5 /* CardsNavigationContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsNavigationContainer.swift; path = mCardsContainer/Classes/CardsNavigationContainer.swift; sourceTree = "<group>"; };
+		1F2F8CEF5CAFE533050CCCA7A6E946A6 /* CardsLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsLayoutAttributes.swift; path = mCardsContainer/Classes/CardsLayoutAttributes.swift; sourceTree = "<group>"; };
 		2623A4DE1A9BA24766C60BB9EF25DA0D /* Pods-mCardsContainer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-mCardsContainer_Tests-umbrella.h"; sourceTree = "<group>"; };
-		29772B534C67B5F7EB1B48D22D51A7B0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		2A582704681DA97FCD5B12CAA69C0B5F /* CardsContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsContainer.swift; path = mCardsContainer/Classes/CardsContainer.swift; sourceTree = "<group>"; };
-		2D7B525C2009CF786E199F98138651F9 /* CardsLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsLayoutAttributes.swift; path = mCardsContainer/Classes/CardsLayoutAttributes.swift; sourceTree = "<group>"; };
+		2D9553F755209791F301170C12EA25EB /* CardsHorizontalLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsHorizontalLayout.swift; path = mCardsContainer/Classes/CardsHorizontalLayout.swift; sourceTree = "<group>"; };
 		2E2C517EDD35157486D43D24DBEF7F6C /* ALEither-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALEither-prefix.pch"; sourceTree = "<group>"; };
 		2E947DC3E83130D9DBEA46B09FE537E0 /* AHContainer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHContainer-dummy.m"; sourceTree = "<group>"; };
+		30C937918E4384F185156900920EAB35 /* CardsCollectionViewContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsCollectionViewContainer.swift; path = mCardsContainer/Classes/CardsCollectionViewContainer.swift; sourceTree = "<group>"; };
 		32F0B65585C39E7BFBEF785F3ED771C5 /* CrossDissolveTransitioner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CrossDissolveTransitioner.swift; path = AHContainerViewController/Classes/Transitioners/CrossDissolveTransitioner.swift; sourceTree = "<group>"; };
 		3760D2AAB63B8515F1E9D39F29C05E69 /* AHContainer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AHContainer.modulemap; sourceTree = "<group>"; };
 		396E8A27DC76EDD16BF27C33D6349D09 /* SlideRightTransitioner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideRightTransitioner.swift; path = AHContainerViewController/Classes/Transitioners/SlideRightTransitioner.swift; sourceTree = "<group>"; };
 		3A3DA832624ED52A58A8293CF83C18FF /* AnimationFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationFactory.swift; path = AHContainerViewController/Classes/AnimationFactory.swift; sourceTree = "<group>"; };
 		3BEBAA642176CB106F2693D36D1CB127 /* SlideDownTransitioner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideDownTransitioner.swift; path = AHContainerViewController/Classes/Transitioners/SlideDownTransitioner.swift; sourceTree = "<group>"; };
-		3C526BBC62C13D1C610285B9AFDF416E /* mCardsContainer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "mCardsContainer-Info.plist"; sourceTree = "<group>"; };
+		448992C036944E40068A90F42B145EEB /* CardsCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsCollectionViewController.swift; path = mCardsContainer/Classes/CardsCollectionViewController.swift; sourceTree = "<group>"; };
+		4726016209BE126F8BECAB4825F61D80 /* mCardsContainer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "mCardsContainer-umbrella.h"; sourceTree = "<group>"; };
 		473E9EB4A27512EB6FAE4C38058CF733 /* ALTapGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ALTapGestureRecognizer.swift; path = AHContainerViewController/Classes/Utils/ALTapGestureRecognizer.swift; sourceTree = "<group>"; };
 		479AD1F1D9468F7A22A89BBD186CD1F7 /* Pods-mCardsContainer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-mCardsContainer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		47E8B8DEC7E09810BF21019A83B61611 /* CardsContainerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsContainerBuilder.swift; path = mCardsContainer/Classes/CardsContainerBuilder.swift; sourceTree = "<group>"; };
+		484C41FEEF6968AA3500907A63E8817A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		4CCF7661FAD464FECFCFA0343601455E /* NoAnimationTransitioner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoAnimationTransitioner.swift; path = AHContainerViewController/Classes/Transitioners/NoAnimationTransitioner.swift; sourceTree = "<group>"; };
-		4D5FCCB9C5C1AC3FC8163C76CFEE334B /* mCardsContainer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = mCardsContainer.modulemap; sourceTree = "<group>"; };
-		53042A498398EE89FBB30113AEE4DC96 /* mCardsContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mCardsContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE155DECE90032C64863F6B9FB602F2 /* CardsMenuLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsMenuLayout.swift; path = mCardsContainer/Classes/CardsMenuLayout.swift; sourceTree = "<group>"; };
+		4EB34D2457496B2AA29A745BC8B1B826 /* LayoutConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConfig.swift; path = mCardsContainer/Classes/LayoutConfig.swift; sourceTree = "<group>"; };
+		53042A498398EE89FBB30113AEE4DC96 /* mCardsContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = mCardsContainer.framework; path = mCardsContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5532CBC66A415927235468BA325BE359 /* ALEither.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ALEither.modulemap; sourceTree = "<group>"; };
-		564A6314C25BD6F424D24B634D17A356 /* BasicCollectionViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicCollectionViewLayout.swift; path = mCardsContainer/Classes/BasicCollectionViewLayout.swift; sourceTree = "<group>"; };
 		56508822CBDAB09696BF251CED3B714D /* DimmingViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DimmingViewModel.swift; path = AHContainerViewController/Classes/DimmingViewModel.swift; sourceTree = "<group>"; };
 		5D93DEC7858A5A86F43564CDAD95C342 /* Pods-mCardsContainer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mCardsContainer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5ED4FB62673BA4BCE5B8F36973781F92 /* AHContainerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AHContainerViewController.swift; path = AHContainerViewController/Classes/AHContainerViewController.swift; sourceTree = "<group>"; };
+		5EE0B73D80D8EE6345FEFCAAA540AB5C /* CardsContainerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsContainerBuilder.swift; path = mCardsContainer/Classes/CardsContainerBuilder.swift; sourceTree = "<group>"; };
 		5F98F48D8C0D6C315D1C978CEE1817FF /* Pods-mCardsContainer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mCardsContainer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		600D88931F9857BF4C19D711F79C18A8 /* Pods-mCardsContainer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-mCardsContainer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6071B9D5C9BAC6BA18A7445836748051 /* Pods-mCardsContainer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-mCardsContainer_Example.modulemap"; sourceTree = "<group>"; };
 		6242753566D9D9AA79991365F94E9C50 /* Pods-mCardsContainer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mCardsContainer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		69F05B4DCE28D412C2DEA7771D9D67D5 /* mCardsContainer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "mCardsContainer-umbrella.h"; sourceTree = "<group>"; };
-		6B04F9150A795123AEFC41EEFFDCE52D /* mCardsContainer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "mCardsContainer-dummy.m"; sourceTree = "<group>"; };
 		7112FAF7D1723EFD5E1F2ADDE83BB003 /* Pods-mCardsContainer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-mCardsContainer_Example-umbrella.h"; sourceTree = "<group>"; };
 		7355F3B078D1A187231ECC66D3987B27 /* AHContainer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHContainer-prefix.pch"; sourceTree = "<group>"; };
+		7396428B1196949ACAED20E1952845BB /* mCardsContainer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = mCardsContainer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		73FA526A89429118317CCAA6CF926AF0 /* AHContainer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHContainer.xcconfig; sourceTree = "<group>"; };
 		75FF33D604B6933B074FC54894305193 /* AHContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		76EE78D9F5BF57732C6E6610BED8BB3A /* Pods_mCardsContainer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mCardsContainer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76EE78D9F5BF57732C6E6610BED8BB3A /* Pods_mCardsContainer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_mCardsContainer_Tests.framework; path = "Pods-mCardsContainer_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79BEA30930DAA3BEE473FC175D341305 /* Pods-mCardsContainer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-mCardsContainer_Tests.modulemap"; sourceTree = "<group>"; };
-		7A9B2F2D2BE099725984CAA1C636097D /* mCardsContainer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = mCardsContainer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7B9047534217DC0652E26E69E56E2518 /* Pods-mCardsContainer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mCardsContainer_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		7F17247A7B817187E3AD3E5F7A2FDBDA /* mCardsContainer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = mCardsContainer.xcconfig; sourceTree = "<group>"; };
+		7CB81202CE7C60EC4B0BAA523C52EF40 /* mCardsContainer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = mCardsContainer.modulemap; sourceTree = "<group>"; };
+		7FEF11DEA65F4B4E6D99A8359382E80A /* mCardsContainer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "mCardsContainer-Info.plist"; sourceTree = "<group>"; };
 		8679C886237FE0171F3BA9B618F7DFA2 /* Pods-mCardsContainer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-mCardsContainer_Tests-dummy.m"; sourceTree = "<group>"; };
-		898CBDCA237B31420056DC09 /* CardsCollectionViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardsCollectionViewContainer.swift; path = mCardsContainer/Classes/CardsCollectionViewContainer.swift; sourceTree = "<group>"; };
-		898CBDCD237B33060056DC09 /* CardsNavigationContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardsNavigationContainer.swift; path = mCardsContainer/Classes/CardsNavigationContainer.swift; sourceTree = "<group>"; };
-		920693FEF6947FDA1517680E78AEE5CD /* AHContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		920693FEF6947FDA1517680E78AEE5CD /* AHContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AHContainer.framework; path = AHContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		972D5D19BF16E98AE3B554F718CBB88B /* Pods-mCardsContainer_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mCardsContainer_Example-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F33478D6FDB9FDF47B982873E47293C /* CardsHorizontalLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsHorizontalLayout.swift; path = mCardsContainer/Classes/CardsHorizontalLayout.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F6010A04EC452B2159CCDDCE4B17328 /* CardsContentCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsContentCell.swift; path = mCardsContainer/Classes/CardsContentCell.swift; sourceTree = "<group>"; };
+		AACC88B9ED6AE2644FD8F8992905FDFB /* BasicCollectionViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BasicCollectionViewLayout.swift; path = mCardsContainer/Classes/BasicCollectionViewLayout.swift; sourceTree = "<group>"; };
 		B5FFB060F19108221F8F602F11A9AFA7 /* AHContainer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AHContainer-Info.plist"; sourceTree = "<group>"; };
-		B81A77E12987C11D645A9890378DE085 /* Pods_mCardsContainer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mCardsContainer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA6904574FB244A2FCCAC12A548F77B8 /* CardsContentCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsContentCell.swift; path = mCardsContainer/Classes/CardsContentCell.swift; sourceTree = "<group>"; };
-		C003F673A5BDF9AD3BD468D170C53212 /* DefaultAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultAnimator.swift; path = mCardsContainer/Classes/DefaultAnimator.swift; sourceTree = "<group>"; };
-		C12E579F7B5BE85CD54CFC3837AC2C98 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B81A77E12987C11D645A9890378DE085 /* Pods_mCardsContainer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_mCardsContainer_Example.framework; path = "Pods-mCardsContainer_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C19FC096B850FE67AD85F05E729AF67E /* Pods-mCardsContainer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mCardsContainer_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C22A00CA2632CF6D64EED554FBED3C8D /* ALEither.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ALEither.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C22A00CA2632CF6D64EED554FBED3C8D /* ALEither.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ALEither.framework; path = ALEither.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE65F004546E6714E97E945AF47100BF /* Pods-mCardsContainer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-mCardsContainer_Example-dummy.m"; sourceTree = "<group>"; };
-		D4038489603701AC5A41EAFF72115A70 /* mCardsContainer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "mCardsContainer-prefix.pch"; sourceTree = "<group>"; };
+		CEC2D68DD5A38F3351F320FECB0BD92C /* mCardsContainer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = mCardsContainer.xcconfig; sourceTree = "<group>"; };
 		D79B71EEBD28DB6C20A52080C9B40E5E /* SlideLeftTransitioner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SlideLeftTransitioner.swift; path = AHContainerViewController/Classes/Transitioners/SlideLeftTransitioner.swift; sourceTree = "<group>"; };
 		DCCE3642BF922A7D0D6FDF8515FFA1CE /* ALEither-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ALEither-dummy.m"; sourceTree = "<group>"; };
-		DED335AB794DCD210A01160B768F35E5 /* CardsCollectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsCollectionViewController.swift; path = mCardsContainer/Classes/CardsCollectionViewController.swift; sourceTree = "<group>"; };
 		DF675D34B177C9F6786349EFA2FCF6D7 /* OptionalExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionalExt.swift; path = ALEither/Classes/OptionalExt.swift; sourceTree = "<group>"; };
-		E360FB583AB7C724A65DFCDAA5F26A96 /* CardsMenuLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsMenuLayout.swift; path = mCardsContainer/Classes/CardsMenuLayout.swift; sourceTree = "<group>"; };
+		E2979CB978159D18D7F4C3484F25A625 /* mCardsContainer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "mCardsContainer-prefix.pch"; sourceTree = "<group>"; };
 		E53C4C9DC0836997466F443785438089 /* ALEither.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ALEither.xcconfig; sourceTree = "<group>"; };
+		E53FDF48A0682D93A04A01FC465CD2DD /* mCardsContainer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "mCardsContainer-dummy.m"; sourceTree = "<group>"; };
+		E637FB2AC2270354E3C935B36B516F1F /* CardsContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CardsContainer.swift; path = mCardsContainer/Classes/CardsContainer.swift; sourceTree = "<group>"; };
 		E7B179A2C689CD9CF38B8401E962CC30 /* VCContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VCContainer.swift; path = AHContainerViewController/Classes/Protocols/VCContainer.swift; sourceTree = "<group>"; };
 		ED39F0739850B16BFC9EFD84A2D8D3CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		ED620D1DFF0CEB9240644C638E3F0320 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		EEA840CFEA533241E44F94A937877081 /* ALEither-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ALEither-Info.plist"; sourceTree = "<group>"; };
 		F67C0ED95F1D9B8165763022E147D05B /* AHContainer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHContainer-umbrella.h"; sourceTree = "<group>"; };
 		FE41D334672EAD76B3E7FF59DC1E9765 /* Pods-mCardsContainer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mCardsContainer_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -209,34 +209,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D35C146D680D01E004F065D3D527F281 /* Frameworks */ = {
+		F79AA8D977B66AC8CDAE45A72939F8B4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ECA7FE9739B7A1CCE78FDB51202D82E /* AHContainer.framework in Frameworks */,
-				93B9AC070C6A63BCFD72AEC447C923BB /* Foundation.framework in Frameworks */,
+				3C664398864AF2C60329F5E499A9FAE2 /* AHContainer.framework in Frameworks */,
+				18D272216C50E3AF783227C3FFA2AB04 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07E3FCB2600048EBF2794EDFA009747F /* Development Pods */ = {
+		1895EFD8A15A298E341F14319EC09CDA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BFCF2F837195D1B5DDE12EDB6D19E0E2 /* mCardsContainer */,
+				7CB81202CE7C60EC4B0BAA523C52EF40 /* mCardsContainer.modulemap */,
+				CEC2D68DD5A38F3351F320FECB0BD92C /* mCardsContainer.xcconfig */,
+				E53FDF48A0682D93A04A01FC465CD2DD /* mCardsContainer-dummy.m */,
+				7FEF11DEA65F4B4E6D99A8359382E80A /* mCardsContainer-Info.plist */,
+				E2979CB978159D18D7F4C3484F25A625 /* mCardsContainer-prefix.pch */,
+				4726016209BE126F8BECAB4825F61D80 /* mCardsContainer-umbrella.h */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/mCardsContainer";
 			sourceTree = "<group>";
 		};
-		11E049F46D61146C778172A3F508E7D5 /* Pod */ = {
+		1F45EBD938227EAE07773C5EEE1E95AE /* mCardsContainer */ = {
 			isa = PBXGroup;
 			children = (
-				C12E579F7B5BE85CD54CFC3837AC2C98 /* LICENSE */,
-				7A9B2F2D2BE099725984CAA1C636097D /* mCardsContainer.podspec */,
-				29772B534C67B5F7EB1B48D22D51A7B0 /* README.md */,
+				AACC88B9ED6AE2644FD8F8992905FDFB /* BasicCollectionViewLayout.swift */,
+				30C937918E4384F185156900920EAB35 /* CardsCollectionViewContainer.swift */,
+				448992C036944E40068A90F42B145EEB /* CardsCollectionViewController.swift */,
+				E637FB2AC2270354E3C935B36B516F1F /* CardsContainer.swift */,
+				5EE0B73D80D8EE6345FEFCAAA540AB5C /* CardsContainerBuilder.swift */,
+				9F6010A04EC452B2159CCDDCE4B17328 /* CardsContentCell.swift */,
+				2D9553F755209791F301170C12EA25EB /* CardsHorizontalLayout.swift */,
+				1F2F8CEF5CAFE533050CCCA7A6E946A6 /* CardsLayoutAttributes.swift */,
+				4CE155DECE90032C64863F6B9FB602F2 /* CardsMenuLayout.swift */,
+				145CCD197A6A21E0974733A1DECCFEA5 /* CardsNavigationContainer.swift */,
+				01AB41D9E9FB392B3ED78943F30BC97E /* DefaultAnimator.swift */,
+				4EB34D2457496B2AA29A745BC8B1B826 /* LayoutConfig.swift */,
+				58D0672559CEF796E3D92D82B175A6C9 /* Pod */,
+				1895EFD8A15A298E341F14319EC09CDA /* Support Files */,
 			);
-			name = Pod;
+			name = mCardsContainer;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		24CDCA97EE78BD5973ADEBD0B46B0E96 /* Pods */ = {
@@ -284,6 +302,7 @@
 				DF675D34B177C9F6786349EFA2FCF6D7 /* OptionalExt.swift */,
 				9AA4056DD012945C1E0EEEB6B536066B /* Support Files */,
 			);
+			name = ALEither;
 			path = ALEither;
 			sourceTree = "<group>";
 		};
@@ -293,6 +312,16 @@
 				ED39F0739850B16BFC9EFD84A2D8D3CA /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		58D0672559CEF796E3D92D82B175A6C9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				484C41FEEF6968AA3500907A63E8817A /* LICENSE */,
+				7396428B1196949ACAED20E1952845BB /* mCardsContainer.podspec */,
+				ED620D1DFF0CEB9240644C638E3F0320 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		76A71D78C6D3A976AF820C9DDA4C7471 /* Pods-mCardsContainer_Tests */ = {
@@ -329,6 +358,7 @@
 				E7B179A2C689CD9CF38B8401E962CC30 /* VCContainer.swift */,
 				8EE5D1D0490DF28F9F67AEAAA03DBB7E /* Support Files */,
 			);
+			name = AHContainer;
 			path = AHContainer;
 			sourceTree = "<group>";
 		};
@@ -369,33 +399,19 @@
 			path = "../Target Support Files/ALEither";
 			sourceTree = "<group>";
 		};
-		BFCF2F837195D1B5DDE12EDB6D19E0E2 /* mCardsContainer */ = {
+		A85CB88E2FBBBBCB69C59A5D386A9EB6 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				898CBDCA237B31420056DC09 /* CardsCollectionViewContainer.swift */,
-				564A6314C25BD6F424D24B634D17A356 /* BasicCollectionViewLayout.swift */,
-				DED335AB794DCD210A01160B768F35E5 /* CardsCollectionViewController.swift */,
-				2A582704681DA97FCD5B12CAA69C0B5F /* CardsContainer.swift */,
-				898CBDCD237B33060056DC09 /* CardsNavigationContainer.swift */,
-				47E8B8DEC7E09810BF21019A83B61611 /* CardsContainerBuilder.swift */,
-				BA6904574FB244A2FCCAC12A548F77B8 /* CardsContentCell.swift */,
-				9F33478D6FDB9FDF47B982873E47293C /* CardsHorizontalLayout.swift */,
-				2D7B525C2009CF786E199F98138651F9 /* CardsLayoutAttributes.swift */,
-				E360FB583AB7C724A65DFCDAA5F26A96 /* CardsMenuLayout.swift */,
-				C003F673A5BDF9AD3BD468D170C53212 /* DefaultAnimator.swift */,
-				0A1EABF4CFDDC6732441741EAB834A7A /* LayoutConfig.swift */,
-				11E049F46D61146C778172A3F508E7D5 /* Pod */,
-				FD0BEF5F21CA38DCF96FE46656126F20 /* Support Files */,
+				1F45EBD938227EAE07773C5EEE1E95AE /* mCardsContainer */,
 			);
-			name = mCardsContainer;
-			path = ../..;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				07E3FCB2600048EBF2794EDFA009747F /* Development Pods */,
+				A85CB88E2FBBBBCB69C59A5D386A9EB6 /* Development Pods */,
 				E40B9FF3DD8E9A29FB7E98D8E471468B /* Frameworks */,
 				24CDCA97EE78BD5973ADEBD0B46B0E96 /* Pods */,
 				2B983AF4F322F07C0F46AFCC7FB1F938 /* Products */,
@@ -411,20 +427,6 @@
 				53A0D22C38A976FD31CAF24F3A98F817 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FD0BEF5F21CA38DCF96FE46656126F20 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4D5FCCB9C5C1AC3FC8163C76CFEE334B /* mCardsContainer.modulemap */,
-				7F17247A7B817187E3AD3E5F7A2FDBDA /* mCardsContainer.xcconfig */,
-				6B04F9150A795123AEFC41EEFFDCE52D /* mCardsContainer-dummy.m */,
-				3C526BBC62C13D1C610285B9AFDF416E /* mCardsContainer-Info.plist */,
-				D4038489603701AC5A41EAFF72115A70 /* mCardsContainer-prefix.pch */,
-				69F05B4DCE28D412C2DEA7771D9D67D5 /* mCardsContainer-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/mCardsContainer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,14 +448,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF5842EC970EE118753CF6C4334AD065 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8AD5E61608D09AB5279157D00AD983AC /* mCardsContainer-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B1D51CCB380864AB7710F8C00F1EB2C7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -467,6 +461,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D0A7A5C749BB9D9C19DD87990A3DEC0 /* AHContainer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E942337312EE6F4931CBA5E06DFD79A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61337CDA9BD0A783C1EDC8FC39F3A8CB /* mCardsContainer-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,17 +495,17 @@
 		};
 		0153E1C80555E65ECE156988E104FB15 /* mCardsContainer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB1802613FA8882D34F716BA6A3D4D79 /* Build configuration list for PBXNativeTarget "mCardsContainer" */;
+			buildConfigurationList = 0E73AAEA476714C5B88B63777F9E1117 /* Build configuration list for PBXNativeTarget "mCardsContainer" */;
 			buildPhases = (
-				AF5842EC970EE118753CF6C4334AD065 /* Headers */,
-				9FC1AD7214A29858149A53B65370B0CE /* Sources */,
-				D35C146D680D01E004F065D3D527F281 /* Frameworks */,
-				90A0D65485CF8CD56B32F4BD1AAECB73 /* Resources */,
+				E942337312EE6F4931CBA5E06DFD79A5 /* Headers */,
+				58D7D6F7E549FF62BFA3D63B0DAF1D71 /* Sources */,
+				F79AA8D977B66AC8CDAE45A72939F8B4 /* Frameworks */,
+				E5298DD5503D65F05BBD6162219A8E4C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E80BB796C57B1AD941FA932A20721AC3 /* PBXTargetDependency */,
+				EC3C0B6229978D1893F3ECF2B7233EA7 /* PBXTargetDependency */,
 			);
 			name = mCardsContainer;
 			productName = mCardsContainer;
@@ -622,7 +624,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		90A0D65485CF8CD56B32F4BD1AAECB73 /* Resources */ = {
+		E5298DD5503D65F05BBD6162219A8E4C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -647,6 +649,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		58D7D6F7E549FF62BFA3D63B0DAF1D71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9082963EE33F418A054DCC9B6A98B309 /* BasicCollectionViewLayout.swift in Sources */,
+				41CAF33174D9C39F304536964B0390F9 /* CardsCollectionViewContainer.swift in Sources */,
+				24397584099458453987F33CCC4BF669 /* CardsCollectionViewController.swift in Sources */,
+				DFA3711A1FC5D996BE0E7DD0F6D8F0B6 /* CardsContainer.swift in Sources */,
+				0F53AFDDA44D5E7F628F66F1EFC88156 /* CardsContainerBuilder.swift in Sources */,
+				500421018DC6A8375001A12C5A1F12E8 /* CardsContentCell.swift in Sources */,
+				1FCE2CA02FEFB061E19F07933399A280 /* CardsHorizontalLayout.swift in Sources */,
+				2C6F15548B67208E3F2BDEA37890B501 /* CardsLayoutAttributes.swift in Sources */,
+				3C896F5DC9757B20678DCA47E3ED4515 /* CardsMenuLayout.swift in Sources */,
+				A5A81007247EDF84738C7841949C604F /* CardsNavigationContainer.swift in Sources */,
+				3F3FC3AA3C83438CEE3087D8F988257D /* DefaultAnimator.swift in Sources */,
+				A93A86E79D8071DCC9C4E80218256B4A /* LayoutConfig.swift in Sources */,
+				567509F3651C603A75FBBC51F6A7732E /* mCardsContainer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		688656F286F1EF6E439BFEABEB3E0A4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -654,26 +676,6 @@
 				FA7CDD99BEB623A74BF01BEF244A2FB3 /* ALEither-dummy.m in Sources */,
 				A2B7691B02E44995E4F1757EA4E93A67 /* ALEither.swift in Sources */,
 				87C7E12AED3BE6C20A17F04F50F567F6 /* OptionalExt.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9FC1AD7214A29858149A53B65370B0CE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				037B746DE397B4B03A1C3C0695DE33DF /* BasicCollectionViewLayout.swift in Sources */,
-				D6EAD00A6FAEFD62A5D929CCF11904DF /* CardsCollectionViewController.swift in Sources */,
-				2342E566D36DC2957EFDBF0AD5CD77C8 /* CardsContainer.swift in Sources */,
-				0AD08870CA8B71FC931CB1574FD50FCD /* CardsContainerBuilder.swift in Sources */,
-				898CBDCC237B31740056DC09 /* CardsCollectionViewContainer.swift in Sources */,
-				6F85113E8489EB342E2EC73C8BC58849 /* CardsContentCell.swift in Sources */,
-				03D1328AC5159F0188779C8B51A64104 /* CardsHorizontalLayout.swift in Sources */,
-				A8630DDDD2197B65A4BC3550D22FBCE2 /* CardsLayoutAttributes.swift in Sources */,
-				2D03661B216BC0CB1AF6B6F1416CE97F /* CardsMenuLayout.swift in Sources */,
-				AC66445B293043CD7B8BC4C2BB94EBC0 /* DefaultAnimator.swift in Sources */,
-				50EBEC05BFFA61FEC6002BBB78596C9B /* LayoutConfig.swift in Sources */,
-				898CBDCE237B33060056DC09 /* CardsNavigationContainer.swift in Sources */,
-				B25699C5B7BD853460DA6DC8E97ADC63 /* mCardsContainer-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -739,15 +741,48 @@
 			target = 0039FA9F1646046A2E7E8F3FC1DBF205 /* ALEither */;
 			targetProxy = 3A3A3590E2FA39B66ECDFA716CF757C9 /* PBXContainerItemProxy */;
 		};
-		E80BB796C57B1AD941FA932A20721AC3 /* PBXTargetDependency */ = {
+		EC3C0B6229978D1893F3ECF2B7233EA7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AHContainer;
 			target = 2D2AB8C1D4FF91CBF9F91868F5C13241 /* AHContainer */;
-			targetProxy = 3F866A704AE554D606AA11F30B71D8E6 /* PBXContainerItemProxy */;
+			targetProxy = 0A986ABC3ACC69414EF7EC20AD30451B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		16AFF92003D142CB0297923C6443E8A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEC2D68DD5A38F3351F320FECB0BD92C /* mCardsContainer.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/mCardsContainer/mCardsContainer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/mCardsContainer/mCardsContainer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/mCardsContainer/mCardsContainer.modulemap";
+				PRODUCT_MODULE_NAME = mCardsContainer;
+				PRODUCT_NAME = mCardsContainer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		17493FDAD5209BA94E0D643B991380A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 73FA526A89429118317CCAA6CF926AF0 /* AHContainer.xcconfig */;
@@ -835,7 +870,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -1083,40 +1119,6 @@
 			};
 			name = Release;
 		};
-		BF3D60FF5F8DFE3FFFBAA2BF99F004D5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F17247A7B817187E3AD3E5F7A2FDBDA /* mCardsContainer.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/mCardsContainer/mCardsContainer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/mCardsContainer/mCardsContainer-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/mCardsContainer/mCardsContainer.modulemap";
-				PRODUCT_MODULE_NAME = mCardsContainer;
-				PRODUCT_NAME = mCardsContainer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1181,9 +1183,9 @@
 			};
 			name = Debug;
 		};
-		EA4AAC8D43D29136DB55DAC4803C4863 /* Debug */ = {
+		E9479F7C6AA6AABCB4BD7F0AA095B6DA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F17247A7B817187E3AD3E5F7A2FDBDA /* mCardsContainer.xcconfig */;
+			baseConfigurationReference = CEC2D68DD5A38F3351F320FECB0BD92C /* mCardsContainer.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1209,14 +1211,24 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0E73AAEA476714C5B88B63777F9E1117 /* Build configuration list for PBXNativeTarget "mCardsContainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16AFF92003D142CB0297923C6443E8A8 /* Debug */,
+				E9479F7C6AA6AABCB4BD7F0AA095B6DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1B17879E4764ADAEFD8475C0A95C1508 /* Build configuration list for PBXNativeTarget "ALEither" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1249,15 +1261,6 @@
 			buildConfigurations = (
 				2864D2B5267B70DFEB1EAE05FFE389EF /* Debug */,
 				AA9CC35E2BF2A4574A62EBE010A11DFE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AB1802613FA8882D34F716BA6A3D4D79 /* Build configuration list for PBXNativeTarget "mCardsContainer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EA4AAC8D43D29136DB55DAC4803C4863 /* Debug */,
-				BF3D60FF5F8DFE3FFFBAA2BF99F004D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

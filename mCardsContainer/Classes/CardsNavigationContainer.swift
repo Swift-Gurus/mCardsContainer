@@ -31,8 +31,8 @@ final class CardsNavigationContainer: UIViewController, VCContainer {
         view.addSubview(cardsContainer.view)
         cardsContainer.view.translatesAutoresizingMaskIntoConstraints = false
         view.topAnchor.constraint(equalTo: cardsContainer.view.safeAreaLayoutGuide.topAnchor).isActive = true
-        view.bottomAnchor.constraint(equalTo: cardsContainer.view.bottomAnchor).isActive = true
-        view.leftAnchor.constraint(equalTo: cardsContainer.view.leftAnchor).isActive = true
+        view.bottomAnchor.constraint(equalTo: cardsContainer.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        view.leftAnchor.constraint(equalTo: cardsContainer.view.safeAreaLayoutGuide.leftAnchor).isActive = true
         view.rightAnchor.constraint(equalTo: cardsContainer.view.safeAreaLayoutGuide.rightAnchor).isActive = true
     }
     

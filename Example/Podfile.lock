@@ -2,7 +2,7 @@ PODS:
   - AHContainer (0.2.2):
     - ALEither
   - ALEither (0.1.8)
-  - mCardsContainer (0.1.2):
+  - mCardsContainer (0.1.4):
     - AHContainer
 
 DEPENDENCIES:
@@ -20,8 +20,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AHContainer: 870bb0204341298f60d40eacb6185c6a7e41a4ef
   ALEither: 57cfaba77b3a2c2e15741b16213b515d9bc839a6
-  mCardsContainer: 9cc251e6decfb0a1dcf38ee23ec44dbe8ae3449c
+  mCardsContainer: c60f17937dd6cf7906dd99973a6f651ba3c2bc4b
 
 PODFILE CHECKSUM: 80f7766bf2148e471f252dc68179eb0aa9ecb610
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.8.3
